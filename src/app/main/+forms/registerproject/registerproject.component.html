@@ -1,0 +1,1010 @@
+<link href="//fonts.googleapis.com/css?family=Hind" rel="stylesheet" type="text/css">
+
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  crossorigin="anonymous">
+
+
+<div class="jumbotron jumbotron-muted">
+  <div class="container">
+    <div class="col-lg-9">
+      <h2>Register your projects and increase your outreach.</h2>
+      <p class="lead">Make your work visible to your potential partners and benfeciaries globally.</p>
+      <!-- <div class="input-group">
+        <input type="text" class="form-control" placeholder="Enter your email">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="button">Download our Brochure</button>
+        </span>
+      </div> -->
+      <br>
+      <small>By submitting this form, you agree to our
+        <a href="/assets/pdf/terms.pdf" target="_blank">Terms of Service
+          <i class="fa fa-external-link" aria-hidden="true"></i>
+        </a> and
+        <a href="/assets/pdf/privacy.pdf" target="_blank">Privacy Policy
+          <i class="fa fa-external-link" aria-hidden="true"></i>
+        </a>.</small>
+    </div>
+
+  </div>
+</div>
+
+<div class="card card-outline-primary">
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <div class="well-block">
+        <div class="well-title center">
+          <h2>Register your Projects</h2>
+        </div>
+        <!-- Start Project Type -->
+        <form class="form-horizontal" [formGroup]="projectForm" novalidate>
+          <div class="row">
+            <div class="col-md-6 field-label-responsive">
+
+              <!-- <label for="name"> -->
+              <h5>Select Project Type</h5>
+
+              <!-- </label> -->
+            </div>
+          </div>
+          <div>
+            <select class="registration-form form-control input-lg" formControlName="projectType">
+              <option value="" selected disabled>Select Project Type</option>
+              <option value="Past">Past</option>
+              <option value="Ongoing">Ongoing</option>
+              <option value="Proposal">Proposal</option>
+            </select>
+
+          </div>
+          <!-- End Project Type -->
+
+          <!--Start Name of the Project-->
+          <div class="divider"></div>
+          <section id="name of project">
+            <h5>Name of the Project</h5>
+
+            <!-- <ng4geo-autocomplete (componentCallback)="autoCompleteCallback1($event)"></ng4geo-autocomplete> -->
+            <div>
+              <input type="text" class="edit-text" class="form-control" formControlName="name"  required autofocus>
+              <!-- <small *ngIf="projectForm.controls['name'].touched" style="color: red;">
+                <small *ngIf="projectForm.controls['name'].touched" style="color: red;">
+                  <small *ngIf="projectForm.controls['name'].hasError('required')">
+                    project name should not be empty
+                  </small>
+                  <small *ngIf="!projectForm.controls.name.valid" class="text-danger">
+                    project name is required.
+                  </small>
+                </small>
+
+              </small> -->
+
+            </div>
+
+          </section>
+          <!-- start project Description -->
+          <div class="divider"></div>
+
+          <section>
+            <label for="message2" class="mb-0">
+              <h5>Project Description (in no more than 100 words)</h5>
+
+            </label>
+            <div class="row mb-1">
+              <div class="col-lg-12">
+                <textarea rows="6" name="message2" id="message2" class="form-control" formControlName="projectDescription" required=""></textarea>
+              </div>
+            </div>
+          </section>
+          <!-- End  project Description -->
+
+          <!-- start project Location -->
+          <div class="divider"></div>
+
+          <section>
+            <label for="message2" class="mb-0">
+              <h5>Project Location</h5>
+
+            </label>
+            <div class="row mb-1">
+              <div class="col-lg-12">
+                <textarea rows="6" name="message2" id="message2" class="form-control" formControlName="projectAddress" required=""></textarea>
+              </div>
+            </div>
+          </section>
+          <div class="divider"></div>
+    
+          <div class="well-title">
+            <h5>Project Schedule</h5>
+          </div>
+          <div class="row">
+            <div class="col-md-3 field-label-responsive">
+              <label for="name">Start Date</label>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <!-- <div class="input-group mb-2 mr-sm-2 mb-sm-0">  -->
+                <input type="date" class="form-control" placeholder="Start Date" formControlName="startDate">
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 field-label-responsive">
+              <label for="name">End Date</label>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <!-- <div class="input-group mb-2 mr-sm-2 mb-sm-0"> -->
+                <input type="date" class="form-control" placeholder="End Date" formControlName="endDate">
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+          <!-- Start Impact made -->
+          <div class="divider"></div>
+
+          <section>
+
+            <label for="message2" class="mb-0">
+              <h5>Impact made</h5>
+              <div class="divider"></div>
+            </label>
+            <div class="row mb-1">
+              <div class="col-lg-12">
+                <textarea rows="6" name="message2" id="message2" class="form-control" formControlName="numHouseholdsAffected" required=""
+                  placeholder="ex: 20 latrines provided to in need households; 15 children provided with primary school education; 50 mothers educated about sexual health; please be as specific as possible"></textarea>
+              </div>
+            </div>
+
+          </section>
+          <!-- End Impact made -->
+          <!--Start Areas of Intervention -->
+
+          <div class="divider"></div>
+
+          <section id="contacts">
+
+            <h3>Intervention Mechanisms</h3>
+            <div class="divider"></div>
+            <div class="col-md-12 contact" formArrayName="interventionmechanisms">
+              <!-- form user info -->
+              <div class="card card-outline-secondary " *ngFor="let contact of projectForm.controls['interventionmechanisms']['controls']; let i = index">
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div [formGroupName]="i">
+                      <div class="card-header">
+                        <p class="mb-1">{{i+1}}.Intervention Mechanisms</p>
+                        <div class=" pull-top pull-right" *ngIf="(i+1) > 1 == true" (click)="removeInterventionMechanisms(i)">
+                          <i class="fa fa-times fa-4x" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div class="card-block">
+                        <fieldset>
+                          <label for="contactName" class="mb-0">Name</label>
+                          <div class="row mb-1">
+                            <div class="col-lg-12">
+                              <input type="text" id="contactName" class="form-control" formControlName="interName" placeholder="Name">
+                            </div>
+                            <small *ngIf="projectForm.controls.interventionmechanisms.controls[i].controls.interName.touched" style="color: red;">
+                              <small *ngIf="projectForm.controls.interventionmechanisms.controls[i].controls.interName.hasError('required')">
+                                Name should not be empty
+                              </small>
+                            </small>
+                          </div>
+
+
+                          <label for="message2" class="mb-0">Description</label>
+                          <div class="row mb-1">
+                            <div class="col-lg-12">
+                              <textarea rows="6" name="message2" id="message2" class="form-control" required="" formControlName="interDescription" placeholder="Description"></textarea>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /form user info -->
+            </div>
+
+
+          </section>
+          <div class="divider"></div>
+          <section id="addcontact">
+            <div class="col-md-12 ">
+              <div class="row">
+                <div class="col-md-4">
+                  <button type="button" (click)="addInterventionMechanisms()" class="btn btn-success float-left">+ Add Another</button>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="divider"></div>
+
+
+          <!--End Areas of Intervention -->
+
+
+          <!-- Start Point(s) of contact in your Project -->
+          <div class="divider"></div>
+
+
+          <section id="contacts">
+
+            <h5>Project Lead Contact</h5>
+            <!-- <hr> -->
+            <div class="divider"></div>
+            <!--/col-->
+            <div class="col-md-12 contact" formArrayName="leads">
+              <!-- form user info -->
+              <div class="card card-outline-secondary " *ngFor="let contact of projectForm.controls['leads']['controls']; let i = index">
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div [formGroupName]="i">
+                      <div class="card-header">
+                        <p class="mb-1">{{i+1}}.Project Lead Contact</p>
+                        <div class=" pull-top pull-right" *ngIf="(i+1) > 1 == true" (click)="removeLeads(i)">
+                          <i class="fa fa-times fa-4x" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div class="card-block">
+                        <fieldset>
+                          <label for="contactName" class="mb-0">Name</label>
+                          <div class="row mb-1">
+                            <div class="col-lg-12">
+                              <input type="text" id="contactName" class="form-control" formControlName="leadName" placeholder="First Name , Last Name">
+                            </div>
+                            <small *ngIf="projectForm.controls.leads.controls[i].controls.leadName.touched" style="color: red;">
+                              <small *ngIf="projectForm.controls.leads.controls[i].controls.leadName.hasError('required')">
+                                Name should not be empty
+                              </small>
+                            </small>
+                          </div>
+                          <label for="contactEmail" class="mb-0">Email</label>
+                          <div class="row mb-1">
+                            <div class="col-lg-12">
+                              <input type="text" id="contactEmail" class="edit-text" class="form-control" formControlName="leadEmail" placeholder="xyz@abc.com"
+                              />
+                            </div>
+                            <div>
+                              <small *ngIf="projectForm.controls.leads.controls[i].controls.leadEmail.touched" style="color: red;">
+                                <small *ngIf="projectForm.controls.leads.controls[i].controls.leadEmail.hasError('required')">
+                                  email id should not be empty
+                                </small>
+                                <small *ngIf="projectForm.controls.leads.controls[i].controls.leadEmail.hasError('pattern')" style="color: red;">
+                                  <small>Please enter valid emailId</small>
+                                </small>
+                              </small>
+
+
+                            </div>
+                          </div>
+                          <label for="contactPhone" class="mb-0">Phone</label>
+                          <div class="row mb-1">
+                            <div class="col-lg-12">
+                              <input type="text" id="contactPhone" class="edit-text" class="form-control" formControlName="leadPhone" placeholder="+1(123)-456-5489"
+                              />
+                            </div>
+                            <div>
+                              <small *ngIf="projectForm.controls.leads.controls[i].controls.leadPhone.touched" style="color: red;">
+                                <small *ngIf="projectForm.controls.leads.controls[i].controls.leadPhone.hasError('required')">
+                                  phone number should not be empty
+                                </small>
+                                <small *ngIf="projectForm.controls.leads.controls[i].controls.leadPhone.hasError('pattern')" style="color: red;">
+                                  <small>Please enter a valid number</small>
+                                </small>
+                              </small>
+                            </div>
+                          </div>
+                          <!-- <label for="message2" class="mb-0">Other Details</label>
+                          <div class="row mb-1">
+                            <div class="col-lg-12">
+                              <textarea rows="6" name="message2" id="message2" class="form-control" required=""></textarea>
+                            </div>
+                          </div> -->
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /form user info -->
+            </div>
+
+
+          </section>
+          <div class="divider"></div>
+          <section id="addcontact">
+            <div class="col-md-12 ">
+              <div class="row">
+                <div class="col-md-4">
+                  <button type="button" (click)="addLeads()" class="btn btn-success float-left">+ Add Another Contact</button>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="divider"></div>
+
+          <!-- End  Point(s) of contact in your Project -->
+
+
+
+          <section id="webinfo">
+
+            <div class="well">
+              <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                  <label for="email">
+                    <h6>Project Website URL</h6>
+                  </label>
+                </div>
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <div class="input-group mb-3 mr-sm-2 mb-sm-0">
+                      <div class="input-group-addon field-label-responsive">
+                        https://
+                      </div>
+                      <input type="text" name="email" class="form-control" formControlName="projectWebsite" id="email" placeholder="enter project website Url"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                      <!-- Put e-mail validation error messages here -->
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                  <label for="email">
+                    <h6>Project Facebook URL</h6>
+
+                  </label>
+                </div>
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                      <div class="input-group-addon">
+                        https://facebook.com/
+                      </div>
+                      <input type="text" name="email" class="form-control" formControlName="projectFacebooksite" id="email" placeholder="enter project facebook id"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                      <!-- Put e-mail validation error messages here -->
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                  <label for="email">
+                    <h6>Project Twitter URL</h6>
+                  </label>
+                </div>
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                      <div class="input-group-addon">
+                        https://twitter.com/
+                      </div>
+                      <input type="text" name="email" class="form-control" formControlName="projectTwittersite" id="email" placeholder="enter project twitter id"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                      <!-- Put e-mail validation error messages here -->
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                  <label for="email">
+                    <h6>Project Youtube/URL </h6>
+
+                  </label>
+                </div>
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                      <div class="input-group-addon">
+                        https://youtube.com/
+                      </div>
+                      <input type="text" name="email" class="form-control" formControlName="projectYoutubesite" id="email" placeholder="enter project youtube link"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                      <!-- Put e-mail validation error messages here -->
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                  <label for="linkedinsite">
+                    <h6>Project linkedin/URL </h6>
+
+                  </label>
+                </div>
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                      <div class="input-group-addon">
+                        https://linkedin.com/
+                      </div>
+                      <input type="text" name="linkedinsite" class="form-control" formControlName="projectLinkedInsite" id="projectLinkedInsite"
+                        placeholder="enter linkedin id"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                      <!-- Put e-mail validation error messages here -->
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--Start Project Summary of challenges -->
+          <section>
+            <div class="divider"></div>
+            <label for="message2" class="mb-0">
+              <h5>Project Summary of challenges</h5>
+
+            </label>
+            <div class="row mb-1">
+              <div class="col-lg-12">
+                <textarea rows="6" name="message2" id="message2" class="form-control" required="" formControlName="challenges" maxlength="260"></textarea>
+
+                <!-- <small *ngIf="projectForm.controls['challenges'].touched" style="color: red;">
+                            <small *ngIf="projectForm.controls['challenges'].hasError('required')">
+                              enter project challenges maximum 260 character..
+                            </small>
+                          </small> -->
+
+
+              </div>
+            </div>
+          </section>
+
+          <!--End Project Summary of challenges -->
+
+          <!--Start Partner Organizations -->
+
+
+          <div class="divider"></div>
+
+
+          <section id="contacts">
+
+            <h3> Partner Organizations</h3>
+            <!-- <hr> -->
+            <div class="divider"></div>
+
+            <div class="col-md-12 contact" formArrayName="partnerOrganizations">
+
+              <div class="card card-outline-secondary " *ngFor="let contact of projectForm.controls['partnerOrganizations']['controls']; let i = index">
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div [formGroupName]="i">
+                      <div class="card-header">
+                        <p class="mb-1">{{i+1}}. Partner Organization</p>
+                        <div class=" pull-top pull-right" *ngIf="(i+1) > 1 == true" (click)="removePartnerOrganizations(i)">
+                          <i class="fa fa-times fa-4x" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div class="card-block">
+                        <fieldset>
+                          <label for="contactName" class="mb-0">Partner Name</label>
+                          <div class="row mb-1">
+                            <div class="col-lg-12">
+                              <input type="text" id="contactName" class="form-control" formControlName="partnerName" placeholder="partnerName">
+                            </div>
+                            <small *ngIf="projectForm.controls.partnerOrganizations.controls[i].controls.partnerName.touched" style="color: red;">
+                              <small *ngIf="projectForm.controls.partnerOrganizations.controls[i].controls.partnerName.hasError('required')">
+                                Name should not be empty
+                              </small>
+                            </small>
+                          </div>
+
+
+                          <label for="message2" class="mb-0">Partnership Details</label>
+                          <div class="row mb-1">
+                            <div class="col-lg-12">
+                              <textarea rows="6" name="message2" id="message2" class="form-control" formControlName="partnershipDetails" placeholder="Partner Details"
+                                required=""></textarea>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </section>
+          <div class="divider"></div>
+          <section id="addcontact">
+            <div class="col-md-12 ">
+              <div class="row">
+                <div class="col-md-4">
+                  <button type="button" (click)="addPartnerOrganizations()" class="btn btn-success float-left">+ Add Another Partner</button>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="divider"></div>
+
+
+
+
+
+          <!--End Partner Organizations -->
+
+          <!--Start Project Budget -->
+          <section id="website">
+
+            <h5>Project Budget Allocated</h5>
+            <!-- <hr> -->
+
+            <div>
+              <input type="text" class="edit-text" class="form-control" id="name" formControlName="budget" />
+              <small *ngIf="projectForm.controls['budget'].touched" style="color: red;">
+                <small *ngIf="projectForm.controls['budget'].hasError('required')">
+                  filed is required
+                </small>
+                <small *ngIf="projectForm.controls['budget'].hasError('pattern')" style="color: red;">
+                  <small>Please enter only numbers</small>
+                </small>
+              </small>
+            </div>
+          </section>
+          <div class="divider"></div>
+          <!--End Project Budget -->
+
+
+
+          <!--Start Project Budget Spent -->
+          <section id="address">
+            <h5>Project Budget Spent</h5>
+            <!-- <hr> -->
+
+            <div>
+              <input type="text" class="edit-text" class="form-control" id="name" formControlName="spent" />
+              <small *ngIf="projectForm.controls['spent'].touched" style="color: red;">
+                <small *ngIf="projectForm.controls['spent'].hasError('required')">
+                  filed is required
+                </small>
+                <small *ngIf="projectForm.controls['spent'].hasError('pattern')" style="color: red;">
+                  <small>Please enter only numbers</small>
+                </small>
+              </small>
+            </div>
+
+
+          </section>
+          <!--End Project Budget Spent -->
+
+
+
+
+          <!-- 1st image preview -->
+          <!-- <label class="btn btn-default">
+                  
+                    <input type="file" (change)="selectFile($event)">
+
+                    <button type="submit" [disabled]="!selectedFiles" (click)="upload()" class="btn btn-warning">Upload
+                      <span class="fa fa-send"></span>
+                    </button>
+                    <img [src]="imageSrc" (load)="handleImageLoad()" [class.loaded]="imageLoaded" height="40">
+                  </label>  -->
+          <!-- 1st image preview -->
+
+
+
+
+          <div class="divider"></div>
+
+
+
+          <div class="divider"></div>
+          <section id="project images">
+            <div class="col-md-12 ">
+              <!-- form card cc payment -->
+              <div class="card card-outline-secondary">
+                <div class="card-block">
+                  <h3 class="text-center">Cover and Profile Photo Upload</h3>
+                  <hr>
+                  <!-- <div class="alert alert-info">
+                    <a class="close" data-dismiss="alert" href="#">{{UploadFiles}}</a>
+                    <img ng-show="image" ng-src="{{selectedprojectcoverimagesFiles.url}}" type="{{selectedprojectcoverimagesFiles.file.type}}" />
+                  </div> -->
+
+
+                  <!-- start project cover image upload -->
+
+                  <div class="form-group">
+                    <h6>Project Cover Images</h6>
+                    <div *ngIf="projectcoverimagesFileUpload" class="progress" style="width:400px">
+                      <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" attr.aria-valuenow="{{projectcoverimagesProgress.percentage}}"
+                        aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width:projectcoverimagesProgress.percentage+'%'}">
+                        {{projectcoverimagesProgress.percentage}}%</div><div *ngIf="projectcoverimagesProgress.percentage == '100'" class="progress-bar-info"><b>Uploading Completed!</b></div>
+                    </div>
+                    <label class="btn btn-default">
+                      <input type="file" (change)="selectProjectcoverimagesFile($event)">
+                    </label>
+                    <button class="btn btn-success" [disabled]="!selectedprojectcoverimagesFiles" (click)="projectcoverimagesUpload(x)" class="btn btn-warning">Upload
+                      <span class="fa fa-send"></span>
+                    </button>
+                    <img [src]="imageSrc" (load)="handleImageLoad()" [class.loaded]="imageLoaded" height="40">
+                    &nbsp;&nbsp;{{imageSrcName}}
+                  </div>
+
+
+                  <!-- end project cover image upload -->
+
+
+
+                  <!-- start project profile image upload -->
+
+
+                  <div class="form-group">
+                    <h6> Project Profile Images</h6>
+                    <div *ngIf="projectprofileimagesFileUpload" class="progress" style="width:400px">
+                      <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" attr.aria-valuenow="{{projectprofileimagesProgress.percentage}}"
+                        aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width:projectprofileimagesProgress.percentage+'%'}">
+                        {{projectprofileimagesProgress.percentage}}%</div><div *ngIf="projectprofileimagesProgress.percentage == '100'" class="progress-bar-info"><b>Uploading Completed!</b></div>
+                    </div>
+                    <label class="btn btn-default">
+                      <input type="file" (change)="selectProjectprofileimagesFile($event)">
+                    </label>
+                    <button class="btn btn-success" [disabled]="!selectedprojectprofileimagesFiles" (click)="projectprofileimagesUpload(x)">Upload
+                      <span class="fa fa-send"></span>
+                    </button>
+                    <img [src]="profileimageSrc" (profileload)="handleprofileImageLoad()" [class.loaded]="profileimageLoaded" height="40">
+                    &nbsp;&nbsp;{{profileimageName}}
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </section>
+
+          <!-- start Other Relevant Documents to This Project -->
+          <div class="divider"></div>
+          <div class="divider"></div>
+          <section id="project images">
+            <div class="col-md-12 ">
+              <!-- form card cc payment -->
+              <div class="card card-outline-secondary">
+                <div class="card-block">
+                  <h3 class="text-center">Other documents relevant to this project</h3>
+                  <hr>
+             
+                  <!-- Start Project Details upload -->
+                  <div class="form-group">
+                    <h6>Project Details</h6>  
+                    <label>
+                      <input #selectedPicture type="file" (change)="detectprojectdetailsFiles($event)" multiple>
+    
+                    </label>
+                    <button [disabled]="!selectedprojectdetailsFiles"  (click)="projectdetailsuploadMulti()" class="btn btn-warning">
+                      Upload Multiple
+                      <span class="fa fa-send"></span>
+                    </button>
+                    <br>
+                    <div *ngIf="projectdetailsUpload">
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" [ngStyle]="{ 'width': projectdetailsUpload?.progress + '%' }"></div>
+                      </div>
+                      Progress: {{projectdetailsUpload?.name}} | {{projectdetailsUpload?.progress}}% Uploading Completed!
+                    </div>
+                
+                    <div class="img-wrap" *ngFor="let x of detailsArray" >
+                      <div class="row">
+                        <div class="col-md-8">
+                      <img [src]="x.imgSrc" height="80" width="80">{{projectdetailsUpload?.name}} 
+                      </div>
+                      &nbsp;
+                      <div class="col-md-4">             
+                      <button class="close" (click)="deleteDetails(x)" class="btn btn-danger">Remove</button>
+                    </div></div>
+                    </div>
+      
+                  </div>         
+                  <!-- End  Project Details upload -->
+
+
+
+                  <!-- Start Project Challenges upload -->
+                  <div class="form-group">
+                    <h6> Project Challenges</h6>
+
+                    <div *ngIf="projectchallengesUpload">
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" [ngStyle]="{ 'width': projectchallengesUpload?.progress + '%' }"></div>
+                      </div>
+                      Progress: {{projectchallengesUpload?.name}} | {{projectchallengesUpload?.progress}}% Uploading Completed!
+                    </div>
+                    <label>
+                      <input #selectedPicture type="file" (change)="detectprojectchallengesFiles($event)" multiple>
+                    </label>
+
+                    <button [disabled]="!selectedprojectchallengesFiles" (click)="projectchallengesuploadMulti()" class="btn btn-warning">
+                      Upload Multiple
+                      <span class="fa fa-send"></span>
+                    </button>
+                    <br>
+                    <div class="img-wrap" *ngFor="let x of challengesArray">
+                      <div class="row">
+                        <div class="col-md-8">
+                      <img [src]="x.imgSrc" height="80" width="80">
+                        </div>
+                        <div class="col-md-4">
+                     
+                        <button class="close" (click)="deleteChallenges(x)" class="btn btn-danger">Remove</button>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                  <!-- End  Project Challenges upload -->
+
+
+                  <!-- Start Partners List upload -->
+
+                  <div class="form-group">
+                    <h6>Partners List</h6>
+                    <div *ngIf="projectpartnerlistUpload">
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" [ngStyle]="{ 'width': projectpartnerlistUpload?.progress + '%' }"></div>
+                      </div>
+                      Progress: {{projectpartnerlistUpload?.name}} | {{projectpartnerlistUpload?.progress}}% Uploading Completed!
+                    </div>
+                    <label>
+                      <input #selectedPicture type="file" (change)="detectprojectpartnerslistFiles($event)" multiple>
+                    </label>
+                    <button [disabled]="!selectedprojectpartnerslistFiles" (click)="projectpartnerslistuploadMulti()" class="btn btn-warning">
+                      Upload Multiple
+                      <span class="fa fa-send"></span>
+                    </button>
+                    <br>
+                    <div class="img-wrap" *ngFor="let x of partnersArray">
+                     
+                      <div class="row">
+                        <div class="col-md-8">
+                      <img [src]="x.imgSrc" height="80" width="80">
+                        </div>
+                    
+                      <div class="col-md-4">
+                      
+                      <button class="close" (click)="deletePartners(x)" class="btn btn-danger">Remove</button>
+                  </div>
+                </div>
+                     
+                    </div>
+                  </div>
+
+                  <!-- End Partners List upload -->
+
+                  <!-- Start Project Images upload -->
+
+                  <div class="form-group">
+                    <h6>Project Images</h6>
+
+                    <div *ngIf="projectimagesUpload">
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" [ngStyle]="{ 'width': projectimagesUpload?.progress + '%' }"></div>
+                      </div>
+                      Progress: {{projectimagesUpload?.name}} | {{projectimagesUpload?.progress}}% Uploading Completed!
+                    </div>
+
+                    <label>
+                      <input #selectedPicture type="file" (change)="detectprojectimagesFiles($event)" multiple>
+                    </label>
+                    <button [disabled]="!selectedprojectimagesFiles" (click)="projectimagesuploadMulti()" class="btn btn-warning">
+                      Upload Multiple
+                      <span class="fa fa-send"></span>
+                    </button>
+                    <br>
+                    <div class="img-wrap" *ngFor="let x of projectsArray">
+                      <div class="row">
+                        <div class="col-md-8">
+                      <img [src]="x.imgSrc" height="70" width="70">
+                    </div>                 
+                    <div class="col-md-4">                
+                      <button class="close" (click)="deleteImages(x)" class="btn btn-danger">Remove</button>
+                    </div>
+                  </div>
+                 </div>
+               </div>
+                  <!-- End  Project Images upload -->
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end project cover image upload -->
+          <div class="divider"></div>
+          <section id="addandsave">
+            <div class="col-md-12 ">
+              <div class="row">
+                <div class="col-md-4">
+                  
+                  <button type="button" (click)="saveandaddproject()" class="btn btn-primary">
+                    <i class="fa fa-user-plus"></i>Save And Add Project</button>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4">
+                  <button type="submit" (click)="saveproject(false)" class="btn btn-primary">
+                    <i class="fa fa-user-plus"></i>Save and Done</button>
+
+                    <button type="submit" (click)="cancel()" class="btn btn-primary">
+                        <i class="fa fa-times"></i>Cancel</button>
+                </div>
+               
+
+              </div>
+            </div>
+          </section>
+        </form>
+        <!-- form end -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script type='text/javascript'>
+  var mapCanvas, geocoder, infoWnd;
+  var boundsBox, resultMarker;
+
+  function initialize() {
+    var initPos = new google.maps.LatLng(35.658609, 139.745447);
+    mapCanvas = new google.maps.Map(document.getElementById("map_canvas"), {
+      center: initPos,
+      zoom: 18,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var icon = new google.maps.MarkerImage();
+    icon.url = "https://chart.googleapis.com/chart?chst=d_bubble_text_small&chld=bb|reverse%20location|FFB573|000000";
+    icon.size = new google.maps.Size(145, 42);
+    icon.anchor = new google.maps.Point(0, 42);
+    var requestMarkerLabel = createMarker({
+      map: mapCanvas,
+      icon: icon,
+      clickable: false
+    });
+    var requestMarker = createMarker({
+      map: mapCanvas,
+      position: initPos,
+      draggable: true,
+      zIndex: Infinity
+    });
+    requestMarkerLabel.bindTo("position", requestMarker);
+
+
+    var icon = new google.maps.MarkerImage();
+    icon.url = "https://chart.googleapis.com/chart?chst=d_bubble_text_small&chld=bbbr|geometry.location|C6EF8C|000000";
+    icon.size = new google.maps.Size(162, 42);
+    icon.anchor = new google.maps.Point(162, 42);
+    var resultMarkerLabel = createMarker({
+      map: mapCanvas,
+      icon: icon,
+      clickable: false
+    });
+    resultMarker = createMarker({
+      clickable: false,
+      icon: "https://chart.googleapis.com/chart?chst=d_map_pin_icon&chld=location|FFFF00"
+    });
+    resultMarkerLabel.bindTo("position", resultMarker);
+    resultMarkerLabel.bindTo("map", resultMarker);
+
+    boundsBox = new google.maps.Rectangle();
+    boundsBox.bindTo("map", resultMarker);
+
+    //infoWindow
+    infoWnd = new google.maps.InfoWindow();
+    infoWnd.setContent("Please drag me.");
+    infoWnd.open(null, requestMarker);
+
+    //Reverse geocode
+    google.maps.event.addListener(requestMarker, "dragstart", function (mouseEvt) {
+      infoWnd.close();
+    });
+
+    google.maps.event.addListener(requestMarker, "dragend", function (mouseEvt) {
+      var request = {
+        location: mouseEvt.latLng
+      };
+      geocoder = new google.maps.Geocoder();
+      geocoder.geocode(request, callback_geododer);
+    });
+  }
+
+  function callback_geododer(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var chooseResult = $("#listPanel");
+      chooseResult.empty();
+      for (var i = 0; i < results.length; i++) {
+        $(document.createElement("option")).css({
+            border: "1px solid gray",
+            width: "100%"
+          })
+          .text("geocodeResult = " + i)
+          .appendTo(chooseResult);
+      }
+      chooseResult.change(function () {
+        var idx = $(this)[0].selectedIndex;
+        var geocodeResult = results[idx];
+        $("#jsonPanel").text(YAHOO.lang.JSON.stringify(geocodeResult, null, 4));
+        showMap(geocodeResult);
+      });
+      chooseResult.selectedIndex = 0;
+      chooseResult.change();
+      resultMarker.setMap(mapCanvas);
+    } else {
+      //alert("Code:" + status);
+      resultMarker.setMap(null);
+    }
+  }
+
+  function showMap(geocodeResult) {
+    var geometry = geocodeResult.geometry;
+    var viewport = geometry.viewport;
+    boundsBox.setBounds(viewport);
+    mapCanvas.fitBounds(viewport);
+    resultMarker.setPosition(geometry.location);
+    infoWnd.setContent("<div style='overflow:visible;height:100px;'>formatted_address=<br>" + geocodeResult.formatted_address +
+      "</div>");
+    infoWnd.open(null, resultMarker);
+  }
+
+  function createMarker(opts) {
+    var marker = new google.maps.Marker(opts);
+    return marker;
+  }
+  google.maps.event.addDomListener(window, "load", initialize);
+</script>

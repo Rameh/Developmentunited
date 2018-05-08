@@ -1,0 +1,65 @@
+// {
+//   "rules": {
+//     "profile": {
+//       "$uid": {
+//         ".read": "auth !== null && auth.uid === $uid",
+//         ".write": "auth !== null && auth.uid === $uid",
+//         ".indexOn": [
+//           "completed"
+//         ]
+//       }
+//     },
+//     "content": {
+//       ".read": true,
+//       ".write": "auth !== null && auth.email === 'madhan.r@gmail.com'"
+//     },
+//     "widgets": {
+//       ".read": true,
+//       ".write": "auth !== null && auth.email === 'madhan.r@gmail.com'"
+//     },
+//     "categories": {
+//       ".read": true,
+//       ".write": "auth !== null && auth.email === 'madhan.r@gmail.com'"
+//     },
+//     "products": {
+//       ".read": true,
+//       ".write": "auth !== null && auth.email === 'madhan.r@gmail.com'"
+//     },
+//     "items": {
+//       ".read": true,
+//       ".write": true
+//     },
+//     "tasks": {
+//       "$uid": {
+//         ".read": "auth !== null && auth.uid === $uid",
+//         ".write": "auth !== null && auth.uid === $uid",
+//         ".indexOn": [
+//           "completed"
+//         ]
+//       }
+//     },
+//     "dogs": {
+//       "$uid": {
+//         ".read": "auth !== null && auth.uid === $uid",
+//         ".write": "auth !== null && auth.uid === $uid",
+//         ".indexOn": [
+//           "completed"
+//         ]
+//       }
+//     }
+//   }
+// }
+{
+  "rules": {
+     ".read": true,
+      ".write": true,
+      "organizations": {
+      ".indexOn": ["orgName", "orgStatus"]
+    	} ,
+    	"projects": {
+      ".indexOn": "name"
+    	} 
+  
+  }
+  
+}

@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "6"
+install:
+  - npm install -g @angular/cli
+  - npm install  
+script:
+  #- npm test
+  - npm run build:prod
+after_success:
+  # Firebase hosting
+  - ./node_modules/.bin/firebase deploy --token $FIREBASE_TOKEN
+sudo: false

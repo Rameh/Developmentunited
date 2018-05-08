@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="card-header">
+        Change username
+    </div>
+
+    <div class="card-block">
+        <div *ngFor="let error of errors">
+            <label class="error">{{error}}</label>
+        </div>
+        <form #hf="ngForm" novalidate role="form">
+            <div class="form-group">
+                <label>First name</label>
+                <input type="text" [class.error]="!firstName.valid" class="form-control" placeholder="First name" [(ngModel)]="userNameModel.firstName"
+                    name="firstName" ngControl="firstName" required #firstName="ngModel" />
+                <div *ngIf="!firstName.valid && firstName.touched" class="form-control-feedback">
+                    First name is required
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Last name</label>
+                <input type="text" [class.error]="!lastName.valid" class="form-control" placeholder="LastName" [(ngModel)]="userNameModel.lastName"
+                    name="lastName" ngControl="lastName" required #lastName="ngModel" />
+                <div *ngIf="!lastName.valid && lastName.touched" class="form-control-feedback">
+                    Last name is required
+                </div>
+            </div>
+            <button class="btn btn-primary pull-right" (click)="save()" [disabled]="!hf.form.valid">Update</button>
+        </form>
+    </div>
+</div>

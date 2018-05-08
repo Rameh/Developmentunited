@@ -1,0 +1,886 @@
+<link href="//fonts.googleapis.com/css?family=Hind" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  crossorigin="anonymous">
+
+<!-- venkat reddy-->
+<div class="jumbotron jumbotron-muted">
+  <!-- hjkhjkhj -->
+  <div class="container">
+    <div class="col-lg-9">
+      <h2>Register now and launch your online public profile instantly.</h2>
+      <p class="lead">Make yourself visilble to your potential partners and benfeciaries globally.</p>
+      <!-- <div class="input-group">
+        <input type="text" class="form-control" placeholder="Enter your email">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="button">Download our Brochure</button>
+        </span>
+      </div> -->
+      <br>
+      <small>By submitting this form, you agree to our
+        <a href="/assets/pdf/terms.pdf" target="_blank">Terms of Service
+          <i class="fa fa-external-link" aria-hidden="true"></i>
+        </a> and
+        <a href="/assets/pdf/privacy.pdf" target="_blank">Privacy Policy
+          <i class="fa fa-external-link" aria-hidden="true"></i>
+        </a>.</small>
+    </div>
+
+  </div>
+</div>
+
+<div class="card card-outline-primary">
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <div class="well-block">
+        <div class="well-title center">
+          <h2>Register your Organization</h2>
+        </div>
+
+        <form class="form-horizontal" [formGroup]="orgForm" novalidate>
+          <!-- <form [formGroup]="orgForm" novalidate (ngSubmit)="onSave()"></form> -->
+          <!-- start name of organization -->
+          <div class="row">
+            <div class="col-md-12">
+              <label for="name">
+                <h6>Name of Organization</h6>
+                <!-- <hr> -->
+              </label>
+            </div>
+          </div>
+          <section>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-addon">
+                      <i class="fa fa-tasks"></i>
+                    </div>
+                    <input type="text" name="name" formControlName="name" class="form-control" id="name" placeholder="organization name" required
+                      autofocus>
+
+                  </div>
+                  <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                      <small *ngIf="orgForm.controls['name'].touched" style="color: red;">
+                        <small *ngIf="orgForm.controls['name'].hasError('required')">
+                          Name should not be empty
+                        </small>
+                        <small *ngIf="orgForm.controls['name'].hasError('pattern')" style="color: red;">
+                          <small>Please enter valid name</small>
+                        </small>
+                      </small>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+          <!-- end name of organization -->
+          <!-- start Area of Interest -->
+          <section>
+
+            <div class="divider"></div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <div class="funkyradio field-label-responsive">
+                    <h6>Areas of Interest [Select all that apply] </h6>
+                    <!-- <hr> -->
+                    <div class="divider"></div>
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isFunding" id="isFunding" value="Find Funding" formControlName="isFunding" />
+
+                      <label for="isFunding">Find Funding</label>
+                    </div>
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isAccessResources" id="isAccessResources" value="Access Resources" formControlName="isAccessResources"
+                      />
+
+                      <label for="isAccessResources">Access Resources</label>
+                    </div>
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isFindPartner" id="isFindPartner" value="Find Partners" formControlName="isFindPartner" />
+
+                      <label for="isFindPartner">Find Partners</label>
+                    </div>
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isAccessData" id="isAccessData" value="Access Data" formControlName="isAccessData" />
+
+                      <label for="isAccessData">Access Data</label>
+                    </div>
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isIncreaseVisibility" id="isIncreaseVisibility" value="Increase Visibility" formControlName="isIncreaseVisibility"
+                      />
+
+                      <label for="isIncreaseVisibility">Increase Visibility</label>
+                    </div>
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isWorkshops" id="isWorkshops" value="Attend/Facilitate Workshops" formControlName="isWorkshops"
+                      />
+                      <label for="isWorkshops">Attend/Facilitate Workshops</label>
+                    </div>
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isTraining" id="isTraining" value="Attend/Facilitate Training" formControlName="isTraining"
+                      />
+                      <label for="isTraining">Attend/Facilitate Training</label>
+                    </div>
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isNetworking" id="isNetworking" value="Increase Network" formControlName="isNetworking" />
+                      <label for="isNetworking">Increase Network</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+
+          <div class="divider"></div>
+
+          <!-- End Area of Interest   -->
+          <div class="row">
+            <div class="col-md-6 field-label-responsive">
+
+              <label for="name">
+                <h5>Organization Type</h5>
+                <!-- <hr> -->
+              </label>
+            </div>
+          </div>
+          <div>
+            <!-- <select class="registration-form form-control input-lg " formControlName="orgType">
+              <option value="orgForm.controls['orgType'].value" selected disabled>Select Organization Type</option> -->
+            <select class="registration-form form-control input-lg " formControlName="orgType">
+              <option value="" selected disabled>Select Organization Type</option>
+              <option value="INGOs">INGOs</option>
+              <option value="Social Enterprise">Social Enterprise</option>
+              <option value="Government Projects">Government Projects</option>
+              <option value="Religious Organization">Religious Organization</option>
+              <option value="For-Profit">For-Profit</option>
+              <option value="Activist Groups">Activist Groups</option>
+              <option value="Free Response">Free Response</option>
+              <option value="Umbrella Organization">Umbrella Organization</option>
+              <option value="Local NGO">Local NGO</option>
+              <option value="National NGO">National NGO</option>
+              <option value="International NGO">International NGO</option>
+              <option value="Humanitarian Organization">Humanitarian Organization</option>
+              <!-- <option value="Umberlla Corporation">Umbrella Corporation</option> -->
+
+            </select>
+
+          </div>
+          <br>
+          <!-- <div class="row">
+            <div class="col-md-3 field-label-responsive">
+              <label for="email">
+                <h6> Address </h6>
+              </label>
+            </div>
+            <div class="form-group col-md-9">
+
+              <textarea  id="address" class="form-control" id="name" formControlName="address" rows="3"></textarea>
+            </div>
+            <div class="col-md-3">
+              <div class="form-control-feedback">
+                <span class="text-danger align-middle">
+                  <!-- Put name validation error messages here -->
+          <!-- </span>
+              </div>
+            </div>
+          </div> -->
+          <!--Start Address-->
+          <section id="address">
+            <h5> Address</h5>
+
+            <div *ngIf="!newmode" class="container">
+                <div class="row">
+                    <div class="callout-block text-left fade-in-b">
+                        <h5 style="color:red"> Note : </h5>
+                        <h6>
+                            Please correct your address below. 
+                            Alternatively, you can move the marker to point to your location on the map
+
+                        </h6>
+                          
+                    </div>
+                </div>
+              </div>
+    
+              <div class="divider"></div>
+
+              <div class="input-group">
+                  <div class="input-group">
+                      <input type="text" class="form-control"  places-auto-complete
+                        (place_changed)="placeChanged($event)" [types]="['geocode']" formControlName="address">
+                      <span class="input-group-btn" >
+                        <button class="btn btn-primary" type="button">Search and Select</button>
+                      </span>
+                    </div>
+                    <small *ngIf="orgForm.controls['address'].touched" style="color: red;">
+                        <small *ngIf="orgForm.controls['address'].touched" style="color: red;">
+                          <small *ngIf="orgForm.controls['address'].hasError('required')">
+                            Address should not be empty
+                          </small>
+                          <small *ngIf="!orgForm.controls.address.valid" class="text-danger">
+                            Address is required.
+                          </small>
+                        </small>
+        
+                      </small>
+                  
+                </div>
+
+                <div class="divider"></div>
+                
+            <ngui-map zoom='18' style="height:400px" [center]="center">
+                <marker [position]="center" draggable="true" (dragend)="dragend($event)" (click)="clicked($event)"></marker>
+                <info-window id="iw">
+                  <div *ngIf="marker.display">
+                    lat: {{ marker.lat }}, lng: {{ marker.lng }}
+                  </div>
+                  <button (click)="hideMarkerInfo()">Hide Info</button>
+                </info-window>
+            
+            </ngui-map>
+
+          
+           
+          </section>
+          <div class="divider"></div>
+          <section id="webinfo">
+
+            <div class="well">
+              <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                  <label for="email">
+                    <h6>Website/URL</h6>
+                  </label>
+                </div>
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <div class="input-group mb-3 mr-sm-2 mb-sm-0">
+                      <div class="input-group-addon field-label-responsive">
+                        https://
+                      </div>
+                      <input type="text" name="email" class="form-control" formControlName="website" id="email" placeholder="your domainname.com"
+                        autofocus>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                      <!-- Put e-mail validation error messages here -->
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                  <label for="email">
+                    <h6>facebook/URL </h6>
+
+                  </label>
+                </div>
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                      <div class="input-group-addon">
+                        https://facebook.com/
+                      </div>
+                      <input type="text" name="email" class="form-control" formControlName="facebooksite" id="email" placeholder="your facebook id "
+                        autofocus>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                      <!-- Put e-mail validation error messages here -->
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                  <label for="email">
+                    <h6>Twitter/URL</h6>
+                  </label>
+                </div>
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                      <div class="input-group-addon">
+                        https://twitter.com/
+                      </div>
+                      <input type="text" name="email" class="form-control" formControlName="twittersite" id="email" placeholder="your twitter id"
+                        autofocus>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                      <!-- Put e-mail validation error messages here -->
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                  <label for="email">
+                    <h6>Youtube/URL </h6>
+
+                  </label>
+                </div>
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                      <div class="input-group-addon">
+                        https://youtube.com/
+                      </div>
+                      <input type="text" name="email" class="form-control" formControlName="youtubesite" id="email" placeholder="your youtube link"
+                        autofocus>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                      <!-- Put e-mail validation error messages here -->
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                  <label for="linkedinsite">
+                    <h6>linkedin/URL </h6>
+
+                  </label>
+                </div>
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                      <div class="input-group-addon">
+                        https://linkedin.com/
+                      </div>
+                      <input type="text" name="linkedinsite" class="form-control" formControlName="linkedinsite" id="linkedinsite" placeholder="your linkedin id"
+                        autofocus>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                      <!-- Put e-mail validation error messages here -->
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="divider"></div>
+
+          <section id="specializations">
+
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <div class="funkyradio field-label-responsive">
+                    <h5>Specializations [Select all that apply] </h5>
+                    <!-- <hr> -->
+                    <div class="divider"></div>
+
+                    <!--  Vijay/Ramesh add this is an array -->
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isbusiness" id="isbusiness" value="Business" formControlName="isbusiness" />
+                      <label for="isbusiness">Business</label>
+                    </div>
+
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isChildOrphanages" id="isChildOrphanages" value="Child: Orphanages" formControlName="isChildOrphanages"
+                      />
+
+                      <label for="isChildOrphanages">Child: Orphanages</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isChildSponsorship" id="isChildSponsorship" value="Child: Sponsorship" formControlName="isChildSponsorship"
+                      />
+                      <label for="isChildSponsorship">Child: Sponsorship</label>
+                    </div>
+
+
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isChildfeedingprograms" id="isChildfeedingprograms" value="Child: Feeding Programs" formControlName="isChildfeedingprograms"
+                      />
+
+                      <label for="isChildfeedingprograms">Child: Feeding Programs</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isDisasterrelief" id="isDisasterrelief" value="Disaster Relief" formControlName="isDisasterrelief">
+
+                      <label for="isDisasterrelief">Disaster Relief</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isEducationpreschool" id="isEducationpreschool" value="Education: Preschool" formControlName="isEducationpreschool"
+                      />
+
+                      <label for="isEducationpreschool">Education: Preschool</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isEducationelementary" id="isEducationelementary" value="Education: Elementary" formControlName="isEducationelementary"
+                      />
+
+                      <label for="isEducationelementary">Education: Elementary</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isEducationuniversity" id="isEducationuniversity" value="Education: High School" formControlName="isEducationhighschool"
+                      />
+
+                      <label for="isEducationuniversity">Education: High School</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isEducationhighschool" id="isEducationhighschool" value="Education: University" formControlName="isEducationuniversity"
+                      />
+
+                      <label for="isEducationhighschool"> Education: University</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isEducationtradeschool" id="isEducationtradeschool" value="Education: Trade School" formControlName="isEducationtradeschool"
+                      />
+
+                      <label for="isEducationtradeschool"> Education: Trade School</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isEnvironment" id="isEnvironment" value="Environment" formControlName="isEnvironment" />
+                      <label for="isEnvironment">Environment</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isFaithchurches" id="isFaithchurches" value="Faith: Churches" formControlName="isFaithchurches"
+                      />
+
+                      <label for="isFaithchurches">Faith: Churches</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isFaithteaching" id="isFaithteaching" value="Faith: Teaching" formControlName="isFaithteaching"
+                      />
+
+                      <label for="isFaithteaching">Faith Teaching</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isFoodfoodaidrelief" id="isFoodfoodaidrelief" value="Food: Food Aid Relief" formControlName="isFoodfoodaidrelief"
+                      />
+
+                      <label for="isFoodfoodaidrelief">Food: Food Aid Relief</label>
+                    </div>
+
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isFoodfoodsustainability" id="isFoodfoodsustainability" value="Food: Food Sustainability" formControlName="isFoodfoodsustainability"
+                      />
+
+                      <label for="isFoodfoodsustainability">Food: Food Sustainability</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isFoodagroecology" id="isFoodagroecology" value="Food: Agro Ecology" formControlName="isFoodagroecology"
+                      />
+
+                      <label for="isFoodagroecology">Food: Agro Ecology</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isHealth" id="isHealth" value="Health" formControlName="isHealth" />
+
+                      <label for="isHealth">Health</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isHumanrights" id="isHumanrights" value="Human Rights" formControlName="isHumanrights" />
+
+                      <label for="isHumanrights"> Human Rights</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isLegalaffairs" id="isLegalaffairs" value="Legal Affairs" formControlName="isLegalaffairs" />
+
+                      <label for="isLegalaffairs"> Legal Affairs</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isMicrofinance" id="isMicrofinance" value="Micro Finance" formControlName="isMicrofinance" />
+
+                      <label for="isMicrofinance"> Micro Finance </label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isRefugees" id="isRefugees" value="Refugees" formControlName="isRefugees" />
+
+                      <label for="isRefugees"> Refugees </label>
+                    </div>
+
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isResearch" id="isResearch" value="Research" formControlName="isResearch" />
+
+                      <label for="isResearch"> Research </label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isScienceandtechnology" id="isScienceandtechnology" value="Science And Technology" formControlName="isScienceandtechnology"
+                      />
+
+                      <label for="isScienceandtechnology"> Science And Technology </label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isShorttermvolunteertrips" id="isShorttermvolunteertrips" value="Short Term Volunteer Trips"
+                        formControlName="isShorttermvolunteertrips" />
+
+                      <label for="isShorttermvolunteertrips"> Short Term Volunteer Trips </label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isSports" id="isSports" value="Sports" formControlName="isSports" />
+
+                      <label for="isSports"> Sports</label>
+                    </div>
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isWaterandsanitation" id="isWaterandsanitation" value="Water And Sanitation" formControlName="isWaterandsanitation"
+                      />
+
+                      <label for="isWaterandsanitation"> Water And Sanitation</label>
+                    </div>
+
+                    <div class="funkyradio-default">
+                      <input type="checkbox" name="isWomen" id="isWomen" value="Women" formControlName="isWomen" />
+
+                      <label for="isWomen"> Women</label>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+          <div class="divider"></div>
+
+          <section id="contacts">
+
+            <h5>Point(s) of contact in your organization</h5>
+            <!-- <hr> -->
+            <div class="divider"></div>
+            <!--/col-->
+            <div class="col-md-12 contact" formArrayName="contacts">
+              <!-- form user info -->
+              <div class="card card-outline-secondary " *ngFor="let contact of orgForm.controls['contacts']['controls']; let i = index">
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div [formGroupName]="i">
+                      <div class="card-header">
+                        <p class="mb-1">{{i+1}}. Contact</p>
+                        <div class=" pull-top pull-right" *ngIf="(i+1) > 1 == true" (click)="removeContact(i)">
+                          <i class="fa fa-times fa-4x" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div class="card-block">
+                        <fieldset>
+                          <label for="contactName" class="mb-0">Name</label>
+                          <div class="row mb-1">
+                            <div class="col-lg-12">
+                              <input type="text" id="contactName" class="form-control" formControlName="contactName" placeholder="First Name , Last Name">
+                            </div>
+                            <!-- <small *ngIf="orgForm.controls.contacts.controls[i].controls.contactName.touched" style="color: red;">
+                              <small *ngIf="orgForm.controls.contacts.controls[i].controls.contactName.hasError('required')">
+                                Name should not be empty
+                              </small>
+                            </small> -->
+                          </div>
+                          <label for="contactEmail" class="mb-0">Email</label>
+                          <div class="row mb-1">
+                            <div class="col-lg-12">
+                              <input type="text" id="contactEmail" class="edit-text" class="form-control" formControlName="contactEmail" placeholder="xyz@abc.com"
+                              />
+                            </div>
+                            <div>
+                              <!-- <small *ngIf="orgForm.controls.contacts.controls[i].controls.contactEmail.touched" style="color: red;">
+                                <small *ngIf="orgForm.controls.contacts.controls[i].controls.contactEmail.hasError('required')">
+                                  email id should not be empty
+                                </small>
+                                <small *ngIf="orgForm.controls.contacts.controls[i].controls.contactEmail.hasError('pattern')" style="color: red;">
+                                  <small>Please enter valid emailId</small>
+                                </small>
+                              </small> -->
+
+
+                            </div>
+                          </div>
+                          <label for="contactPhone" class="mb-0">Phone</label>
+                          <div class="row mb-1">
+                            <div class="col-lg-12">
+                              <input type="text" id="contactPhone" class="edit-text" class="form-control" formControlName="contactPhone" placeholder="+1(123)-456-5489"
+                              />
+                            </div>
+                            <div>
+                              <!-- <small *ngIf="orgForm.controls.contacts.controls[i].controls.contactPhone.touched" style="color: red;">
+                                <small *ngIf="orgForm.controls.contacts.controls[i].controls.contactPhone.hasError('required')">
+                                  phone number should not be empty
+                                </small>
+                                <small *ngIf="orgForm.controls.contacts.controls[i].controls.contactPhone.hasError('pattern')" style="color: red;">
+                                  <small>Please enter a valid number</small>
+                                </small>
+                              </small> -->
+                            </div>
+                          </div>
+                          <!-- <label for="message2" class="mb-0">Other Details</label>
+                          <div class="row mb-1">
+                            <div class="col-lg-12">
+                              <textarea rows="6" name="message2" id="message2" class="form-control" formControlName="otherdetails" required=""></textarea>
+                            </div>
+                          </div> -->
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /form user info -->
+            </div>
+
+
+          </section>
+          <div class="divider"></div>
+          <section id="addcontact">
+            <div class="col-md-12 ">
+              <div class="row">
+                <div class="col-md-4">
+                  <button type="button" (click)="addContact()" class="btn btn-success float-left">+ Add Another Contact</button>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <image-upload url="https://httpbin.org/status/200" (removed)="onRemoved($event)" (uploadFinished)="onUploadFinished($event)"
+            (uploadStateChanged)="onUploadStateChanged($event)">
+          </image-upload>
+
+          <div class="divider"></div>
+          <section id="project images">
+            <div class="col-md-12 ">
+              <!-- form card cc payment -->
+              <div class="card card-outline-secondary">
+                <div class="card-block">
+                  <h3 class="text-center">Cover and Profile Photo Upload</h3>
+                  <hr>
+                  <div class="form-group">
+                    <h6>Organization Cover Image</h6>
+                    <div *ngIf="currentFileUpload" class="progress" style="width:400px">
+                      <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" attr.aria-valuenow="{{progress.percentage}}"
+                        aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width:progress.percentage+'%'}">
+                        {{progress.percentage}}% </div><div *ngIf="progress.percentage == '100'"><b>Uploading Completed!</b></div>
+                    </div>
+                    <label class="btn btn-default">
+                      <input type="file" (change)="selectFile($event)">
+                    </label>
+                    <button class="btn btn-success" [class.disabled]="!selectedFiles" (click)="upload()" class="btn btn-warning">Upload
+                      <span class="fa fa-send"></span>
+                    </button>
+                    <img [src]="imageSrc" (load)="handleImageLoad()" [class.loaded]="imageLoaded" height="40">
+                    &nbsp;&nbsp;{{imageSrcName}}
+                  </div>
+
+
+
+                  <div class="form-group">
+                    <h6> Orgnization Profile Image</h6>
+                    <div *ngIf="profileFileUpload" class="progress" style="width:400px">
+                      <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" attr.aria-valuenow="{{profileprogress.percentage}}"
+                        aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width:profileprogress.percentage+'%'}">
+                        {{profileprogress.percentage}}%</div><div *ngIf="profileprogress.percentage == '100'" class="progress-bar-info"><b>Uploading Completed!</b></div>
+                    </div>
+                    <label class="btn btn-default">
+                      <input type="file" (change)="selectProfileFile($event)">
+                    </label>
+                    <button class="btn btn-success" [class.disabled]="!selectedProfileFiles" (click)="profileUpload()">Upload
+                      <span class="fa fa-send"></span>
+                    </button>
+                    <img [src]="profileimageSrc" (profileload)="handleprofileImageLoad()" [class.loaded]="profileimageLoaded" height="40">
+                    &nbsp;&nbsp;{{profileimageName}}
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- start Organization Cover Images upload -->
+          </section>
+          <div class="divider"></div>
+          <section id="addandsave">
+            <div class="col-md-12 ">
+              <div class="row">
+                <div class="col-md-4">
+                  <button type="button" class="btn btn-lg btn-primary" (click)="onSave('edit')" [disabled]="!orgForm.valid">
+                    <i class="fa fa-user-plus"></i>Save And Add Project</button>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4">
+                  <button type="submit" class="btn btn-lg btn-primary" (click)="onSave('save')" [disabled]="!orgForm.valid">
+                    <i class="fa fa-user-plus"></i>Save and Done</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </form>
+        <!-- form end -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script type='text/javascript'>
+
+  var mapCanvas, geocoder, infoWnd;
+  var boundsBox, resultMarker;
+  function initialize() {
+    var initPos = new google.maps.LatLng(35.658609, 139.745447);
+    mapCanvas = new google.maps.Map(document.getElementById("map_canvas"), {
+      center: initPos,
+      zoom: 18,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var icon = new google.maps.MarkerImage();
+    icon.url = "https://chart.googleapis.com/chart?chst=d_bubble_text_small&chld=bb|reverse%20location|FFB573|000000";
+    icon.size = new google.maps.Size(145, 42);
+    icon.anchor = new google.maps.Point(0, 42);
+    var requestMarkerLabel = createMarker({
+      map: mapCanvas,
+      icon: icon,
+      clickable: false
+    });
+    var requestMarker = createMarker({
+      map: mapCanvas,
+      position: initPos,
+      draggable: true,
+      zIndex: Infinity
+    });
+    requestMarkerLabel.bindTo("position", requestMarker);
+
+
+    var icon = new google.maps.MarkerImage();
+    icon.url = "https://chart.googleapis.com/chart?chst=d_bubble_text_small&chld=bbbr|geometry.location|C6EF8C|000000";
+    icon.size = new google.maps.Size(162, 42);
+    icon.anchor = new google.maps.Point(162, 42);
+    var resultMarkerLabel = createMarker({
+      map: mapCanvas,
+      icon: icon,
+      clickable: false
+    });
+    resultMarker = createMarker({
+      clickable: false,
+      icon: "https://chart.googleapis.com/chart?chst=d_map_pin_icon&chld=location|FFFF00"
+    });
+    resultMarkerLabel.bindTo("position", resultMarker);
+    resultMarkerLabel.bindTo("map", resultMarker);
+
+    boundsBox = new google.maps.Rectangle();
+    boundsBox.bindTo("map", resultMarker);
+
+    //infoWindow
+    infoWnd = new google.maps.InfoWindow();
+    infoWnd.setContent("Please drag me.");
+    infoWnd.open(null, requestMarker);
+
+    //Reverse geocode
+    google.maps.event.addListener(requestMarker, "dragstart", function (mouseEvt) {
+      infoWnd.close();
+    });
+
+    google.maps.event.addListener(requestMarker, "dragend", function (mouseEvt) {
+      var request = {
+        location: mouseEvt.latLng
+      };
+      geocoder = new google.maps.Geocoder();
+      geocoder.geocode(request, callback_geododer);
+    });
+  }
+  function callback_geododer(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var chooseResult = $("#listPanel");
+      chooseResult.empty();
+      for (var i = 0; i < results.length; i++) {
+        $(document.createElement("option")).css({
+          border: "1px solid gray",
+          width: "100%"
+        })
+          .text("geocodeResult = " + i)
+          .appendTo(chooseResult);
+      }
+      chooseResult.change(function () {
+        var idx = $(this)[0].selectedIndex;
+        var geocodeResult = results[idx];
+        $("#jsonPanel").text(YAHOO.lang.JSON.stringify(geocodeResult, null, 4));
+        showMap(geocodeResult);
+      });
+      chooseResult.selectedIndex = 0;
+      chooseResult.change();
+      resultMarker.setMap(mapCanvas);
+    } else {
+      //alert("Code:" + status);
+      resultMarker.setMap(null);
+    }
+  }
+  function showMap(geocodeResult) {
+    var geometry = geocodeResult.geometry;
+    var viewport = geometry.viewport;
+    boundsBox.setBounds(viewport);
+    mapCanvas.fitBounds(viewport);
+    resultMarker.setPosition(geometry.location);
+    infoWnd.setContent("<div style='overflow:visible;height:100px;'>formatted_address=<br>" + geocodeResult.formatted_address + "</div>");
+    infoWnd.open(null, resultMarker);
+  }
+  function createMarker(opts) {
+    var marker = new google.maps.Marker(opts);
+    return marker;
+  }
+  google.maps.event.addDomListener(window, "load", initialize);
+</script>

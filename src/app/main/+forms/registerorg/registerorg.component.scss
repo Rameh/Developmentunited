@@ -1,0 +1,263 @@
+.well-block {
+    background-color: #fff;
+    border: 1px solid #e9e6e8;
+    padding: 40px;
+}
+
+.well-title {
+    margin-bottom: 40px;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family:montserrat;
+}
+
+p{
+    font-size:17px;
+}
+
+a{
+    border-bottom:2px solid;
+    padding: 3px;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+a:active{
+    padding-top: 2px;
+}
+
+a:visited {
+    border-bottom:2px solid;
+    padding: 3px;
+    text-decoration:none;
+}
+
+a:focus {
+    border-bottom:2px solid;
+    text-decoration:none;
+}
+
+.link-white{
+    border-bottom:2px solid;
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.link-white:hover{
+    color:#bdc3c7;
+    text-decoration:none;
+}
+
+.jumbotron-dark{
+    background-color:#333;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg, rgba(250, 250, 250, 0),
+        rgba(255, 255, 255, 0) 65%, rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+    color:#fff;
+}
+
+.jumbotron-dark-alt{
+    background-color:#333;
+    color:#fff;
+}
+
+.jumbotron-muted{
+    background-color:#ecf0f1;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg, rgba(250, 250, 250, 0),
+        rgba(255, 255, 255, 0) 65%, rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+}
+
+.jumbotron-primary{
+    background-color:#3498db;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 65%, rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1))
+    ;
+    color:#ffffff;
+}
+
+.jumbotron-success{
+    background-color:#2ecc71;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 65%,
+        rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+        color:#ffffff;
+}
+
+.jumbotron-info{
+    background-color:#9b59b6;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg, rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 65%, rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+    color:#ffffff;
+}
+
+.jumbotron-warning{
+    background-color:#f39c12;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 65%,
+        rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+    color:#ffffff;
+}
+
+.jumbotron-danger{
+    background-color:#e74c3c;
+    background-image:
+        url("https://i.imgur.com/5BUTk9z.png"),
+        linear-gradient(165deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 65%,
+        rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+    color:#ffffff;
+}
+
+
+//checkboxes
+
+.funkyradio div {
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .funkyradio label {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #D1D3D4;
+    font-weight: normal;
+  }
+  
+  .funkyradio input[type="radio"]:empty,
+  .funkyradio input[type="checkbox"]:empty {
+    display: none;
+  }
+  
+  .funkyradio input[type="radio"]:empty ~ label,
+  .funkyradio input[type="checkbox"]:empty ~ label {
+    position: relative;
+    line-height: 2.5em;
+    text-indent: 3.25em;
+    //margin-top: 2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  .funkyradio input[type="radio"]:empty ~ label:before,
+  .funkyradio input[type="checkbox"]:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 2.5em;
+    background: #D1D3D4;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .funkyradio input[type="radio"]:hover:not(:checked) ~ label,
+  .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+    color: rgb(75, 70, 70);
+  }
+  
+  .funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
+  .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: rgb(112, 109, 109);
+  }
+  
+  .funkyradio input[type="radio"]:checked ~ label,
+  .funkyradio input[type="checkbox"]:checked ~ label {
+    color: #777;
+  }
+  
+  .funkyradio input[type="radio"]:checked ~ label:before,
+  .funkyradio input[type="checkbox"]:checked ~ label:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: #333;
+    background-color: #ccc;
+  }
+  
+  .funkyradio input[type="radio"]:focus ~ label:before,
+  .funkyradio input[type="checkbox"]:focus ~ label:before {
+    box-shadow: 0 0 0 3px #999;
+  }
+  
+  .funkyradio-default input[type="radio"]:checked ~ label:before,
+  .funkyradio-default input[type="checkbox"]:checked ~ label:before {
+    color: #333;
+    background-color: #ccc;
+  }
+  
+  .funkyradio-primary input[type="radio"]:checked ~ label:before,
+  .funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #337ab7;
+  }
+  
+  .funkyradio-success input[type="radio"]:checked ~ label:before,
+  .funkyradio-success input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #5cb85c;
+  }
+  
+  .funkyradio-danger input[type="radio"]:checked ~ label:before,
+  .funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #d9534f;
+  }
+  
+  .funkyradio-warning input[type="radio"]:checked ~ label:before,
+  .funkyradio-warning input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #f0ad4e;
+  }
+  
+  .funkyradio-info input[type="radio"]:checked ~ label:before,
+  .funkyradio-info input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #5bc0de;
+  }
+
+
+
+
+
+.divider {
+    margin-top: 2em;
+  }
+
+
+  .margin-bottom {
+    margin-bottom:15px;}
+    

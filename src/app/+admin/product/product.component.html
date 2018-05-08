@@ -1,0 +1,122 @@
+<div class="row col-md-6" *ngIf="categories">
+	<div class="form-group">
+		<label for="categoriesSelect">Categories <span *ngIf="selectedCategory">({{selectedCategoryId}})</span></label>
+		<select class="form-control" id="categoriesSelect" name="category" [(ngModel)]="selectedCategoryId" required (ngModelChange)="onChange(selectedCategoryId)">
+      <option selected="true" value="0">Please select...</option>
+      <option *ngFor="let category of categories | async" [value]="category.$key">{{category.name}}</option>
+    </select>
+	</div>
+</div>
+
+<div class="row" *ngIf="products">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Price</th>
+				<th>Quantity</th>
+				<th>Date Added</th>
+				<th>
+					<button class="btn btn-success" (click)="open(template, null)">New <i class="fa fa-plus"></i> </button>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let product of products | async">
+				<td>{{product.$key}}</td>
+				<td>{{product.name}} <i ngbTooltip="{{product.description}}" class="fa fa-info-circle hover"></i> </td>
+				<td>{{product.price}}</td>
+				<td>{{product.quantity}}</td>
+				<td>{{product.dateAdded | date: 'dd/MM/yyyy'}}</td>
+				<td>
+					<div class="btn-group" role="group" aria-label="Categories editing buttons">
+						<button type="button" class="btn btn-sm btn-warning" (click)="open(template, product)">
+              <i class="fa fa-pencil"></i>
+          </button>
+						<button type="button" class="btn btn-sm btn-danger" (click)="delete(product)">
+              <i class="fa fa-trash-o"></i>
+          </button>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<!--Modal template-->
+<template #template let-c="close" let-d="dismiss">
+	<div class="modal-header">
+		<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+		<h4 class="modal-title">Upsert product</h4>
+	</div>
+	<div class="modal-body">
+
+		<form #hf="ngForm" novalidate role="form">
+			<div class="form-group">
+				<label>Name</label>
+				<input type="text" [class.error]="!name.valid" class="form-control" placeholder="Name" [(ngModel)]="currentProduct.name"
+					name="name" ngControl="name" required #name="ngModel" />
+				<div *ngIf="!name.valid && name.touched" class="form-control-feedback">
+					Name is required
+				</div>
+			</div>
+			<div class="form-group">
+				<label>Price</label>
+				<input type="text" [class.error]="!price.valid" class="form-control" placeholder="Price" [(ngModel)]="currentProduct.price"
+					name="price" ngControl="price" required #price="ngModel" />
+				<label *ngIf="!price.valid && price.touched" class="form-control-feedback">
+            Price is required
+         </label>
+			</div>
+			<div class="form-group">
+				<label>Quantity</label>
+				<input type="text" [class.error]="!quantity.valid" class="form-control" placeholder="Quantity" [(ngModel)]="currentProduct.quantity"
+					name="quantity" ngControl="quantity" required #quantity="ngModel" />
+				<label *ngIf="!quantity.valid && quantity.touched" class="form-control-feedback">
+            Quantity is required
+         </label>
+			</div>
+			<div class="form-group">
+				<label>Date added</label>
+
+				<div class="input-group">
+					<input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+					<div class="input-group-addon" (click)="d.toggle()">
+						<img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;" />
+					</div>
+					<input class="form-control" placeholder="yyyy-mm-dd" name="dateAdded" [(ngModel)]="currentProduct.dateAdded" ngbDatepicker
+						#dateAdded="ngbDatepicker">
+					<div class="input-group-addon" (click)="dateAdded.toggle()">
+						<i class="fa fa-calendar"></i>
+					</div>
+				</div>
+
+				<!--<ngb-datepicker name="dateAdded" #dateAdded [(ngModel)]="currentProduct.dateAdded"></ngb-datepicker>-->
+
+				<!--<input type="text" [class.error]="!dateAdded.valid" class="form-control" placeholder="Date" [(ngModel)]="currentProduct.dateAdded"
+          name="dateAdded" ngControl="dateAdded" required #dateAdded="ngModel" />-->
+				<label *ngIf="!dateAdded.valid && dateAdded.touched" class="form-control-feedback">
+            Date added is required
+         </label>
+			</div>
+			<div class="form-group">
+				<label>Description</label>
+				<textarea [class.error]="!description.valid" class="form-control" placeholder="Description" [(ngModel)]="currentProduct.description"
+					name="description" ngControl="description" required #description="ngModel"></textarea>
+				<label *ngIf="!description.valid && description.touched" class="form-control-feedback">
+            Description is required
+         </label>
+			</div>
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button type="submit" class="btn btn-secondary" [disabled]="!hf.form.valid" (click)="c(currentProduct)">Upsert</button>
+		<button type="button" class="btn btn-warning" (click)="d('Close click')">Close</button>
+	</div>
+</template>
+
+<template ngbModalContainer></template>

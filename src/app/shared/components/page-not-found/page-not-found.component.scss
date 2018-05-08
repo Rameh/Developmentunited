@@ -1,0 +1,76 @@
+//colors
+$color_sail_approx: #b3d4fc;
+$color_tapa_approx: #737373;
+$color_gallery_approx: #f0f0f0;
+$color_nobel_approx: #b3b3b3;
+$color_shady_lady_approx: #a7a7a7;
+$white: #fff;
+$color_alabaster_approx: #fcfcfc;
+$color_pink_swan_approx: #bbb;
+
+//fonts
+$font_0: Helvetica Neue;
+$font_1: Helvetica;
+$font_2: Arial;
+$font_3: sans-serif;
+
+::-moz-selection {
+	background: $color_sail_approx;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: none;
+}
+::selection {
+	background: $color_sail_approx;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: none;
+}
+html {
+	padding: 30px 10px;
+	font-size: 20px;
+	line-height: 1.4;
+	color: $color_tapa_approx;
+	background: $color_gallery_approx;
+	font-family: $font_0, $font_1, $font_2, $font_3;
+}
+input {
+	font-family: $font_0, $font_1, $font_2, $font_3;
+}
+body {
+	max-width: 500px;
+	_width: 500px;
+	padding: 30px 20px 50px;
+	border: 1px solid $color_nobel_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px;
+	margin: 0 auto;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 1px 10px $color_shady_lady_approx, inset 0 1px 0 $white;
+	background: $color_alabaster_approx;
+}
+h1 {
+	margin: 0 10px;
+	font-size: 50px;
+	text-align: center;
+	span {
+		color: $color_pink_swan_approx;
+	}
+}
+h3 {
+	margin: 1.5em 0 0.5em;
+}
+p {
+	margin: 1em 0;
+}
+ul {
+	padding: 0 0 0 40px;
+	margin: 1em 0;
+}
+.container {
+	max-width: 380px;
+	_width: 380px;
+	margin: 0 auto;
+}
+
+.divider {
+    height:100px;
+  }

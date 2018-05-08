@@ -1,0 +1,252 @@
+html {
+    font-family: Roboto, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 1.28571429em;
+    font-weight: 700;
+    line-height: 1.2857em;
+    margin: 0;
+}
+
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.card-img-top {
+    display: block;
+    width: 100%;
+    
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.28571429em;
+    font-weight: 700;
+    line-height: 1.2857em;
+    color: rgba(0, 0, 0, .68);
+}
+
+.card-text {
+    clear: both;
+    margin-top: .5em;
+    color: rgba(0, 0, 0, .68);
+}
+
+.card-footer {
+    font-size: 1em;
+    position: static;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    padding: .75em 1em;
+    color: rgba(0, 0, 0, .4);
+    border-top: 1px solid rgba(0, 0, 0, .05) !important;
+    background: #fff;
+}
+
+.card-inverse .btn {
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.profile {
+    position: absolute;
+    top: -12px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.profile-avatar {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile-inline {
+    position: relative;
+    top: 0;
+    display: inline-block;
+}
+
+.profile-inline ~ .card-title {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: top;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.meta {
+    font-size: 1em;
+    color: rgba(0, 0, 0, .4);
+}
+
+.meta a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .4);
+}
+
+.meta a:hover {
+    color: rgba(0, 0, 0, .87);
+}
+
+
+
+///### jumbotron
+
+body {
+    font-family:hind;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:montserrat;
+}
+
+p{
+    font-size:17px;
+}
+
+a{
+    border-bottom:2px solid;
+    padding: 3px;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+a:active{
+    padding-top: 2px;
+}
+
+a:visited {
+    border-bottom:2px solid;
+    padding: 3px;
+    text-decoration:none;
+}
+
+a:focus {
+    border-bottom:2px solid;
+    text-decoration:none;
+}
+
+.link-white{
+    border-bottom:2px solid;
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.link-white:hover{
+    color:#bdc3c7;
+    text-decoration:none;
+}
+
+.jumbotron-dark{
+    background-color:#333;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg, rgba(250, 250, 250, 0),
+        rgba(255, 255, 255, 0) 65%, rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+    color:#fff;
+}
+
+.jumbotron-dark-alt{
+    background-color:#333;
+    color:#fff;
+}
+
+.jumbotron-muted{
+    background-color:#ecf0f1;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg, rgba(250, 250, 250, 0),
+        rgba(255, 255, 255, 0) 65%, rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+}
+
+.jumbotron-primary{
+    background-color:#3498db;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 65%, rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1))
+    ;
+    color:#ffffff;
+}
+
+.jumbotron-success{
+    background-color:#2ecc71;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 65%,
+        rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+        color:#ffffff;
+
+}
+
+.jumbotron-info{
+    background-color:#9b59b6;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg, rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 65%, rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+    color:#ffffff;
+}
+
+.jumbotron-warning{
+    background-color:#f39c12;
+    background-image:
+        url("https://i.imgur.com/2o6cukD.png"),
+        linear-gradient(165deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 65%,
+        rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+    color:#ffffff;
+}
+
+.jumbotron-danger{
+    background-color:#e74c3c;
+    background-image:
+        url("https://i.imgur.com/5BUTk9z.png"),
+        linear-gradient(165deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 65%,
+        rgba(38, 38, 38, 0.1) 65.1%,
+        rgba(38, 38, 38, 0.1));
+    color:#ffffff;
+}

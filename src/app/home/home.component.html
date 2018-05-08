@@ -1,0 +1,202 @@
+<section class="home-section">
+        
+        
+            <div class="container">
+        
+                <h1>Development United</h1>
+                <h1>
+                    <img src="/assets/img/icon@2x.png" height="100" width="100" alt=""> </h1>
+        
+        
+            </div>
+        
+            <a href="#" scrollTo="#benefits-for-members" class="cd-scroll-down cd-img-replace">scroll down</a>
+        
+        </section>
+        
+        <div class="divider"></div>
+        <div class="content-wrapper">
+        <section id="about">
+                <div class="container m-b-md">
+                    <div class="content-panel">
+                      <h1 class="text-center">About</h1>
+                      <h2 class="text-center"> Development United is a <b>members-based online platform </b> that <br> increases the <b> visibility </b> of development assistance. The platform gives organizations the <b> information </b> they need to make informed decisions in the field, <br> and <b> facilitates partnerships</b> among <b>aid groups <br> all over the world.</b></h2>
+                    </div>
+                </div>
+                <div>
+                        
+               </div>
+        </section>
+        </div>
+        <div class="divider"></div>
+        
+        <div class="content-wrapper">
+        <section  id="benefits" class="member-benifits">
+                <div class="container m-b-md member-benefits">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1> Benefits </h1>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <h6>For the first time, we are going to gain a <b> comprehensive </b> understanding of who is doing what and where in oversees development assistance. </h6>
+                            <h6>The world develops better, together. <br>Join our community! </h6>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-md-4 m-t-xxl">
+                            <h4>Increased <b> visibility </b> provides organizations <b> access</b> to a <b>wider donor base. </b></h4>
+                        </div>
+                        <div class="col-md-4 m-t-xxl">
+                            <h4>Increased <b> visibility </b> facilitates <b>mutually beneficial Partnerships </b>in the field. </h4>
+                        </div>
+                        <div class="col-md-4 m-t-xxl">
+                            <h4>Increased <b> visibility</b> stimulates a <b> mutual sharing </b> of information, knowledge and data to <b>increase the effectiveness of aid delivery. </b></h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+        </div>
+        
+        
+        <div class="content-wrapper">
+                <section id="platform">
+                        <div class="container m-b-md">
+                            <div class="content-panel how-its-works">
+                                <h1 class="text-center">Platform</h1>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-6 m-t-xl">
+                                        <h2>1. Register</h2>
+                                      <p>Register your organization name, email and website, and you are one step closer to becoming visible. We will automatically generate a user-profile for your organization with this basic information.</p>
+                                    </div>
+                                    <div class="col-md-6 m-t-xl">
+                                        <h2>2. Become Visible</h2>
+                                        <p>Increase your visibility by logging the activities of your organization. Add the past, current and future projects of your organization. Logging your projects is quick and easy using our standardized templates. We only ask you for the information that donors and partners truly want to see.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 m-t-xl">
+                                        <h2>3. Analyze Data</h2>
+                                        <p>Search through our site using our interactive maps and data tool bars. Development United provides you with information that is specifically relevant to your activities in the field, and summarizes data into an easy to read and time-efficient document. We have collected data from local governments, the Abdul Jameel Latif Poverty Action Lab, Innovations for Poverty Action, Copenhagen Consensus: Haïti Priorise and much more.</p>
+                                    </div>
+                                    <div class="col-md-6 m-t-xl">
+                                        <h2>4. Form Partnerships</h2>
+                                        <p>After you have gained a comprehensive understanding of who is doing what and where, and read reports from the field's leading experts, your organization has the opportunity to act on this knowledge. The Development United platform is built to actively stimulate mutually beneficial partnerships. Using our "collaborate" button, your organization can look for partnerships to increase the impact and scale of your interventions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        </div>
+            <section id="search" class="sidebar fixed">
+                <div class="jumbotron" id="home">
+                        <h2 class="display-10">Development Assistance Enhanced!</h2>
+                
+                        <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3>Search for partners, engage share information and collaborate </h3>
+                                        <div id="custom-search-input">
+                                            <div class="input-group col-md-9">
+                                                <!--<input type="text" class="form-control input-lg" placeholder="Buscar" />-->
+                                                <input  class="form-control input-lg" placeholder="Cupertino,CA" places-auto-complete (place_changed)="placeChanged($event)" [types]="['geocode']"  />
+                                                <button class="btn btn-sm" type="button">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="divider"></div>
+                                <div class="row">
+                                 
+                                          
+                                    <!-- <div class="col-md-4">
+                                        Map Legend:
+                                    </div>
+                                    <div class="col-md-4">
+                                            <img src="../../assets/img/markers/blue-dot.png " height="10" width="5" center center no-repeat>-Indicates Projects
+                                            
+                                    </div>
+                                    <div class="col-md-4">
+                                            <img src="../../assets/img/markers/yellow-dot.png" height="20" width="20"> Organizations
+                                            
+                                    </div> -->
+                                </div>
+                            </div>
+                </div>
+                <ngui-map zoom='3' style="height:450px" center="{{latitude}},{{longitude}}" (mapReady$)="onMapReady($event)" (mapClick)="onMapClick($event)" (idle)="onIdle($event)" [geoFallbackCenter]="[18.578536,-72.3198]">
+                    <marker zoom="16" [position]="center"></marker>
+                    <marker zoom="16" *ngFor="let pos of centerPosition" [position]="pos"></marker>
+                    <div *ngFor="let pos of organisationPositions">
+                        <marker (click)="OrgProjPosition(pos,$event)" [position]="[pos.lat,pos.lng]"
+                                 [icon]="{ url: pos.iconUrl, anchor: [8,8], size: [35,35], scaledSize: [35,35] }">
+                            <info-window class="gm-style-iw" id="iw-container">
+
+                                <div class="iw-container">
+                                        <div class="iw-subTitle" *ngIf="marker.display">
+                                          {{marker.typeName}}
+                                        </div>
+                                        <div *ngIf="marker.display">
+                                          {{marker.address}}
+                                        </div>
+    
+                  <!-- <div class="iw-bottom-gradient"></div> -->
+              </div>                                
+                                    <button *ngIf="marker.orgButton" (click)="orgMoreInfo(marker.orgId)">More Info</button>
+                                    <button *ngIf="marker.projButton" (click)="projMoreInfo(marker.projId)">More Info</button>
+                            </info-window>
+                        </marker>
+                    </div>
+                    
+                </ngui-map>
+
+                 
+
+        </section>
+                <div class="divider"></div>
+               <section class="sidebar scrollable">
+                <div class="row">
+                        <div class="col-sm-4">
+                          <div class="card">
+                            <div class="card-block">
+                              <h3 class="card-title">Register Now</h3>
+                              <p class="card-text">In order to make the most of our platform you’ll want to register, login, and fill out your profile.
+                                Join us today <b>(it’s free!)</b> and start creating partnerships in your local communities.
+                                </p>
+                              <a [routerLink]="['/registerorg/new/new']" class="btn btn-primary">Register</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-block">
+                            <h3 class="card-title">Pre-registered</h3>
+                            <div class="divider"></div>
+                            <p class="card-text"> If you have already pre-registered. Complete registration by clicking below
+                                <div class="divider"></div>
+                            <a [routerLink]="['/orgsearch']" class="btn btn-primary">Complete Registration</a>
+                          </div>
+                        </div>
+                      </div>
+                        <div class="col-sm-4">
+                          <div class="card">
+                            <div class="card-block">
+                              <h3 class="card-title">Contact</h3>
+                              <p class="card-text">
+                                If you have any questions or feedback for us, don’t hesitate to shoot us an email at: <a href="mailto:info@developmentunited.com">DevelopmentUnited</a>. We’d love to hear from you!</p>
+                              <a href="mailto:info@developmentunited.com" class="btn btn-primary">Contact Us</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                    </section>
+        
+        
+        

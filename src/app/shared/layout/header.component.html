@@ -1,0 +1,120 @@
+
+<nav class=" navbar navbar-toggleable-md navbar-inverse bg-inverse sticky-top">
+	<button class="navbar-toggler " type="button" (click)="isCollapsed = !isCollapsed">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" [collapse]="isCollapsed">
+		<ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-left">
+
+			<li class="nav-item">
+				<a class="navbar-brand" [routerLink]="['/home']">
+					<img src="/assets/img/icon@2x.png" style="height:30px;width:30px;">
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a target="_self" href="home#about" class="nav-link">About</a>
+			</li>
+			<li class="nav-item">
+				<a target="_self" href="home#platform" class="nav-link">Platform</a>
+			</li>
+			<li class="nav-item">
+				<a target="_self" href="home#benefits" class="nav-link">Benefits</a>
+			</li>
+			<li class="nav-item">
+				<a  target="_self" href="home#search" class="nav-link">Search</a>
+			</li>
+			<li class="nav-item">
+				<a [routerLink]="['/explore']">
+					<button class="btn btn-outline-success my-2 my-sm-0 ">
+						Explore
+					</button>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a [routerLink]="['/orgsearch']">
+					<button class="btn btn-outline-success my-2 my-sm-0 ">
+						Register Now					</button>
+				</a>
+			</li>
+
+
+
+		</ul>
+		<ul class="nav navbar-nav navbar-left">
+
+
+			<li  class="dropdown order-2" >
+					<div class="nav-item dropdown">
+						<div ngbDropdown class="well d-inline-block pull-left">
+	
+							<div *ngIf="!(user | async)?.uid;then content2 else other_content2"></div>
+	
+							<ng-template #content2>
+	
+								<button class="btn btn-outline-defaul" id="dropdownMenu1" class="btn btn-outline-default my-2 my-sm-0 dropdown-toggle" ngbDropdownToggle>
+									Sign In/Sign Up
+								</button>
+	
+							</ng-template>
+							<ng-template #other_content2>
+								<button class="btn btn-outline-success" id="dropdownMenu1" class="btn btn-outline-success my-2 my-sm-0 dropdown-toggle" ngbDropdownToggle>
+									Member Options
+								</button>
+	
+							</ng-template>
+	
+	
+	
+							<div class="dropdown-menu container-fluid" aria-labelledby="dropdownMenu1">
+	
+								<button *ngIf="!(user | async)?.uid" class="dropdown-item" routerLinkActive="active" routerLink="login/new">
+									<i class="fa fa-sign-in"> &nbsp;</i>Sign In
+								</button>
+								<button *ngIf="!(user | async)?.uid" class="dropdown-item" routerLinkActive="active" routerLink="register">
+									<i class="fa fa-registered"> &nbsp;</i>Sign Up
+								</button>
+								<button *ngIf="(user | async)?.uid" class="dropdown-item" disabled >
+									<i class="fa fa-meh-o"> &nbsp;</i> {{storageService.getUserName()}}
+								</button>
+	
+								<button *ngIf="(user | async)?.uid" class="dropdown-item" routerLinkActive="active" (click)=logout()>
+									<i class="fa fa-sign-out"> &nbsp;</i>Logout
+								</button>
+								<!-- <button *ngIf="(user | async)?.uid" class="dropdown-item" routerLinkActive="active" routerLink="profile">
+									<i class="fa fa-user"> &nbsp;</i>Profile
+								</button> -->
+								<button  *ngIf=" (user | async)?.uid && orgData.length > 0 "  disabled class="dropdown-item" >
+									Organizations
+								</button>
+
+								<div *ngIf="(user | async)?.uid"  class="nav-item dropdown">
+							
+			
+										<div  routerLink="/org/{{org?.orgId}}" *ngFor="let org of orgData"  class="dropdown-item"  >
+											<i class="fa fa-eye" ></i>
+										 &nbsp;{{org?.orgName}}
+										</div>
+								</div>
+								  
+							</div>
+						</div>
+	
+						
+					</div>
+	
+				</li>
+			
+			<li class="nav-item img-circle justify-content-between ml-auto" id="submenu" *ngIf="(user | async)?.uid">
+				<figure id="avatar">
+					<!-- <img [src]="getAvatar()" width="40" height="40"> -->
+					<img *ngIf="getAvatar() != 'null'" [src]="getAvatar()" width="30" height="30" style="border-radius: 50%;margin-left:10px">
+					<img *ngIf="getAvatar() == 'null'" src="/assets/img/default_avatar.png" width="30" height="30" style="border-radius: 50%; padding-left:20px">
+				</figure>
+
+			</li>
+
+		</ul>
+
+	</div>
+</nav>

@@ -1,0 +1,341 @@
+
+
+
+
+img { width: 100px; }
+
+
+section.home-section {
+   
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    top: 0;
+    min-height: 58%;
+    background: url("/assets/img/header_bg.jpg") repeat fixed;
+    position: relative;
+
+    h1 {
+        text-align: center;
+        font-size: 64px;
+        color: white;
+        letter-spacing: 0;
+        line-height: 80px;
+        font-weight: 100;
+        width: 100%;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    
+    .cd-scroll-down {
+        position: absolute;
+        left: 50%;
+        right: auto;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        bottom: 20px;
+        width: 38px;
+        height: 44px;
+        background: url("/assets/img/cd-arrow-bottom.svg") no-repeat center center;
+    }
+    .cd-img-replace {
+        display: inline-block;
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+    }
+}
+
+
+.divider {
+    height:30px;
+  }
+
+div.content-wrapper {
+    section {
+        padding: 5px 5px;
+    }
+
+    section.member-benifits {
+      padding: 50px 0;
+        background: url('/assets/img/members-benefits-city.png') repeat fixed;
+        font: 'Roboto', Helvetica, Arial, san-serif;
+    }
+
+    section.price-contentimg {
+        background: url('/assets/img/Rectangle-bg.png') repeat fixed;
+    }
+
+    .member-benefits-img:before, .price-contentimg:before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: " ";
+        position: absolute;
+    }
+
+    .member-benefits-img, .price-contentimg {
+        width: 100%;
+        height: auto;
+        //padding: 50px 0;
+        position: relative;
+        background-size: cover;
+    }
+}
+
+
+
+#home {
+	background-image: url('/assets/img/beach.jpg' ) center;
+	//margin-top: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+    .jumbotron { min-height: 150px; }
+}
+
+
+
+//#########  search
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+
+div.sidebar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    width: 280px;
+}
+
+div#fixed {
+    background: #76a7dc;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+div#scrollable {
+    overflow-y: scroll;
+}
+
+
+//######## map window
+
+
+//colors
+$white: #fff;
+$color_nobel_60_approx: rgba(178, 178, 178, 0.6);
+$color_picton_blue_60_approx: rgba(72, 181, 233, 0.6);
+$color_picton_blue_approx: #48b5e9;
+$white_100: rgba(255,255,255,1);
+
+//fonts
+$font_0: proxima-nova, sans-serif;
+$font_1: sans-serif;
+
+#map-canvas {
+	margin: 0;
+	padding: 0;
+	height: 400px;
+	max-width: none;
+	img {
+		max-width: none !important;
+	}
+}
+
+.iw-container {
+	margin-bottom: 10px;
+	.iw-title {
+		font-family: $font_0, $font_1;
+		font-size: 22px;
+		font-weight: 400;
+		padding: 10px;
+		background-color: $color_picton_blue_approx;
+		color: $white;
+		margin: 0;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 2px 2px 0 0;
+	}
+	.iw-content {
+		font-size: 13px;
+		line-height: 18px;
+		font-weight: 400;
+		margin-right: 1px;
+		padding: 15px 5px 20px 15px;
+		max-height: 140px;
+		overflow-y: auto;
+		overflow-x: hidden;
+    }
+    .gm-style-iw {
+        width: 350px !important;
+        top: 15px !important;
+        left: 0 !important;
+        background-color: $white;
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 1px 6px $color_nobel_60_approx;
+        border: 1px solid $color_picton_blue_60_approx;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 2px 2px 10px 10px;
+    }
+}
+.iw-subTitle {
+	font-size: 16px;
+	font-weight: 700;
+	padding: 5px 0;
+}
+.iw-bottom-gradient {
+	position: absolute;
+	width: 326px;
+	height: 25px;
+	bottom: 10px;
+	right: 18px;
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0, $white_100 100%);
+}
+.iw-content img {
+	float: right;
+	margin: 0 5px 5px 10px;
+}
+
+
+//callouts
+$color_1: #000;
+$color_2: #fff;
+$color_3: #B1B1B1;
+$background_color_1: #ccc;
+$background_color_2: #252525;
+$background_color_3: rgb(114, 109, 112);
+$background_color_4: #A94545;
+$background_color_5: #F5F3F4;
+/* ----------------------------
+ * Callouts
+ * ----------------------------
+ */
+ .callout-light {
+	padding: 30px;
+	color: $color_1;
+	background-color: $background_color_1;
+	h1 {
+		font-weight: 300;
+		line-height: 1.4;
+	}
+}
+h2 {
+	font-weight: 300;
+	line-height: 1.4;
+	font-weight: 300;
+	line-height: 1.4;
+	font-weight: 300;
+	line-height: 1.4;
+}
+h3 {
+	font-weight: 300;
+	line-height: 1.4;
+	font-weight: 300;
+	line-height: 1.4;
+	font-weight: 300;
+	line-height: 1.4;
+}
+h4 {
+	font-weight: 300;
+	line-height: 1.4;
+	font-weight: 300;
+	line-height: 1.4;
+	font-weight: 300;
+	line-height: 1.4;
+}
+.callout-dark {
+	padding: 30px;
+	color: $color_2;
+	background-color: $background_color_2;
+	h1 {
+		font-weight: 300;
+		line-height: 1.4;
+	}
+	p {
+		color: $color_3;
+		font-size: 17px;
+	}
+}
+.callout-mage {
+	padding: 30px;
+	background-color: $background_color_3;
+	color: $color_2;
+}
+.callout-bubble {
+	padding: 30px;
+	color: $color_2;
+	background-color: $background_color_4;
+	h1 {
+		font-weight: 300;
+		line-height: 1.4;
+	}
+}
+.callout-block {
+	background-color: $background_color_5;
+	border-left: 5px solid #a94545;
+	border-right: 5px solid #a94545;
+	padding: 15px;
+	h1 {
+		font-weight: 300;
+		line-height: 1.4;
+	}
+	h2 {
+		font-weight: 300;
+		line-height: 1.4;
+	}
+	h3 {
+		font-weight: 300;
+		line-height: 1.4;
+	}
+	h4 {
+		font-weight: 300;
+		line-height: 1.4;
+	}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+<p>Admin home</p>
+
+<div class="row">
+    <a routerLink="../category">
+        <div class="col-md-6 card card-inverse card-info text-xs-center">
+            <div class="card-block">
+                <blockquote class="card-blockquote">
+                    <p>{{(categories | async)?.length}}</p>
+                    <footer>Total categories</footer>
+                </blockquote>
+            </div>
+        </div>
+    </a>
+</div>

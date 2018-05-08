@@ -1,0 +1,246 @@
+<link href="//fonts.googleapis.com/css?family=Hind" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  crossorigin="anonymous">
+
+
+<div class="divider"></div>
+<section id="explore" lass="sidebar fixed">
+  <ngui-map zoom="3" center="{{latitude}},{{longitude}}" (mapReady$)="onMapReady($event)" (mapClick)="onMapClick($event)" (idle)="onIdle($event)" [geoFallbackCenter]="[18.578536,-72.3198]">
+    <marker zoom="16" [position]="center"></marker>
+    <marker zoom="16" *ngFor="let pos of centerPosition" [position]="pos"></marker>
+    <div *ngIf="allProjOrgToggle">
+      <div *ngFor="let pos of organisationPositions">
+        <marker (click)="OrgProjPosition(pos,$event)" [position]="[pos.lat,pos.lng]" [icon]="{ url: pos.iconUrl, anchor: [16,16], size: [35,35], scaledSize: [35,35] }">
+          <info-window class="gm-style-iw" id="iw-container">
+            <div class="iw-container">
+              <div class="iw-subTitle" *ngIf="marker.display">
+                {{marker.typeName}}
+              </div>
+              <div *ngIf="marker.display">
+                {{marker.address}}
+              </div>
+
+              <!-- <div class="iw-bottom-gradient"></div> -->
+            </div>
+            <button *ngIf="marker.orgButton" (click)="orgMoreInfo(marker.orgId)">More Info</button>
+            <button *ngIf="marker.projButton" (click)="projMoreInfo(marker.projId)">More Info</button>
+          </info-window>
+        </marker>
+      </div>
+    </div>
+    <div *ngIf="organisationToggle">
+      <div *ngFor="let pos of organisationMarkers">
+        <marker (click)="OrgProjPosition(pos,$event)" [position]="[pos.lat,pos.lng]" [icon]="{ url: pos.iconUrl, anchor: [16,16], size: [35,35], scaledSize: [35,35] }">
+          <info-window class="gm-style-iw" id="iw-container">
+            <div class="iw-container">
+              <div class="iw-subTitle" *ngIf="marker.display">
+                {{marker.typeName}}
+              </div>
+              <div *ngIf="marker.display">
+                {{marker.address}}
+              </div>
+           <!-- ramesh -->
+              <!-- <div class="iw-bottom-gradient"></div> -->
+            </div>
+            <button *ngIf="marker.orgButton" (click)="orgMoreInfo(marker.orgId)">More Info</button>
+            <button *ngIf="marker.projButton" (click)="projMoreInfo(marker.projId)">More Info</button>
+          </info-window>
+        </marker>
+      </div>
+    </div>
+    <div *ngIf="projectToggle">
+      <div *ngFor="let pos of projectMarkers">
+        <marker (click)="OrgProjPosition(pos,$event)" [position]="[pos.lat,pos.lng]" [icon]="{ url: pos.iconUrl, anchor: [16,16], size: [35,35], scaledSize: [35,35] }">
+          <info-window class="gm-style-iw" id="iw-container">
+            <div class="iw-container">
+              <div class="iw-subTitle" *ngIf="marker.display">
+                {{marker.typeName}}
+              </div>
+              <div *ngIf="marker.display">
+                {{marker.address}}
+              </div>
+
+              <!-- <div class="iw-bottom-gradient"></div> -->
+            </div>
+            <button *ngIf="marker.orgButton" (click)="orgMoreInfo(marker.orgId)">More Info</button>
+            <button *ngIf="marker.projButton" (click)="projMoreInfo(marker.projId)">More Info</button>
+          </info-window>
+        </marker>
+      </div>
+    </div>
+  </ngui-map>
+</section>
+<div class="divider"></div>
+
+<!-- For Search -->
+<div class="jumbotron jumbotron-muted">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2> Search for partners, engage share information and collaborate
+        </h2>
+        <p class="lead">Search for your potential partners and benfeciaries globally!</p>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Enter Cupertino,CA or a place of your choice " places-auto-complete
+            (place_changed)="placeChanged($event)" [types]="['geocode']">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button">Search By Location</button>
+          </span>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="input-group">
+          <!-- <input type="text" class="form-control" [ng-model]="term" placeholder="Development United, Agroecology or any term.. "> -->
+          <input type="text" class="form-control" name="orgInput" [(ngModel)]="term" placeholder="Enter your organization name here..">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button">Search By Organizations or Projects</button>
+          </span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- For List of Org and Proj -->
+<!-- <div class="jumbotron jumbotron-muted"> -->
+<h3> List of Organizations and Projects</h3>
+<div class="container">
+  <tabset class="col-md-12">
+    <tab>
+      <div class="scrollable" (elementVisible)="wid = $event.id" (elementHidden)="whid = $event.id" ng2-scrollable>
+        <div class="col-md-4">
+          <span *tabHeading>
+            <button type="button" class="btn btn-outline-default" (click)="allProjectsOrganisation()">All</button>
+          </span>
+        </div>
+
+        <section>
+          <div class="row">
+            <div class="col-md-6">
+              <h3>List of Organizations</h3>
+              <div class="well" *ngFor="let orgs of orgData|searchfilter:'orgName':term;">
+                <h3> Name: {{orgs?.orgName}}</h3>
+                <div class="plan-name">Location: {{orgs?.address}}</div>
+                <div class="text">
+                  <p>Type: {{orgs?.orgType}}</p>
+                </div>
+                <button type="button" class="btn btn-default" (click)="orgMoreInfo(orgs?.orgKey)">View More Details
+                  <span class="fa fa-plus">
+                  </span>
+                </button>
+              </div>
+              <div class="well callout-light text-center fade-in-b" *ngIf="!orgData || orgData.length <=0 ">
+                <h1>No Organizations to list </h1>
+                <b>Organization Owner?</b>
+                <p>Click here to register and add Organizations</p>
+                <a href="/registerorg/new/new" class="btn btn-default">Add Organization</a>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <h3>List of Projects</h3>
+              <div class="well" *ngFor="let proj of projData">
+                <h3> Project Name: {{proj?.name}}</h3>
+                <h3> Organization Name: {{proj?.orgName}}</h3>
+                <div class="plan-name">Location: {{proj?.projectAddress}}</div>
+                <div class="text">
+                  <p>Description: {{proj?.projectDescription}}</p>
+                </div>
+                <button type="button" class="btn btn-default" (click)="projMoreInfo(proj?.projectid)">View More Details
+                  <span class="fa fa-plus">
+                  </span>
+                </button>
+              </div>
+              <div class="well callout-light text-center fade-in-b" *ngIf="!projData  || projData.length <=0 ">
+                <h1>No Projects to list </h1>
+                <b>Organization Owner?</b>
+                <p>Click here to add register and add projects ..</p>
+
+                <a href="/registerorg/new/new" class="btn btn-default">Add Organization and Projects</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+    </tab>
+    <tab>
+      <div class="col-md-3">
+        <span *tabHeading>
+          <button type="button" class="btn btn-outline-primary" (click)="organisations()">Organizations</button>
+        </span>
+      </div>
+      <section>
+        <div class="row" *ngFor="let orgs of orgData|searchfilter:'orgName':term;">
+          <div class="col-md-12">
+            <div class="well">
+              <h3> Name: {{orgs?.orgName}}</h3>
+              <div class="plan-name">Location: {{orgs?.address}}</div>
+              <div class="text">
+                <p>Type: {{orgs?.orgType}}</p>
+              </div>
+              <button type="button" class="btn btn-default" (click)="orgMoreInfo(orgs?.orgKey)">View More Details
+                <span class="fa fa-plus">
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="well callout-light text-center fade-in-b" *ngIf="!orgData || orgData.length <=0 ">
+          <h1>No Organizations to list </h1>
+          <b>Organization Owner?</b>
+          <p>Click here to register and add Organizations</p>
+          <a href="/registerorg/new/new" class="btn btn-default">Add Organization</a>
+        </div>
+      </section>
+    </tab>
+    <tab>
+      <div class="col-md-3">
+        <span *tabHeading>
+          <button type="button" class="btn btn-outline-primary" (click)="projects()">Projects</button>
+        </span>
+      </div>
+
+      <section>
+        <div class="row" *ngFor="let proj of projData">
+          <div class="col-md-12">
+            <div class="well">
+              <h3> Project Name: {{proj?.name}}</h3>
+              <h3> Organization Name: {{proj?.orgName}}</h3>
+              <div class="plan-name">Location: {{proj?.projectAddress}}</div>
+              <div class="text">
+                <p>Description: {{proj?.description}}</p>
+              </div>
+              <button type="button" class="btn btn-default" (click)="projMoreInfo(proj?.projectid)">View More Details
+                <span class="fa fa-plus">
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="well callout-light text-center fade-in-b" *ngIf="!projData  || projData.length <=0 ">
+          <h1>No Projects to list </h1>
+          <b>Organization Owner?</b>
+          <p>Click here to add register and add projects ..</p>
+          <a href="/registerorg/new/new" class="btn btn-default">Add Organization and Projects</a>
+        </div>
+
+
+      </section>
+    </tab>
+
+    <tab></tab>
+  </tabset>
+</div>

@@ -1,0 +1,91 @@
+
+<div class="jumbotron jumbotron-success">
+        <div class="row mb-5">
+                <div class="col-lg-5 center-block">
+                        <div class="row mb-5">
+                        <h4>Curious?  </h4>
+                        <div class="divider"></div>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" (click)="gotoexplore()" type="button">Explore</button>
+                            </span>
+                        </div>
+                        </div>
+        
+        
+                        <div class="divider"></div>
+                        <div class="row mb-5">
+                        <h4>Register as a New Organization?  </h4>
+                        <div class="divider"></div>
+                        <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-secondary" (click)="onSelectedNew()" type="button"> New <i class="fa fa-plus-square-o fa-6x "></i></button>
+                                </span>
+                        </div>
+                        </div>
+                        
+                    </div>
+            <div class="col-lg-5 center-block">
+                <h2>Pre-registered? Search for your organization below and complete your registration</h2>
+                <p class="lead">Join the 500 + Organizations Pre-registered!</p>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="orgInput" [(ngModel)]="term" placeholder="Enter your organization name here..">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </span>
+                </div>
+            </div>
+            
+            
+
+
+        </div>
+ 
+
+</div>
+
+
+<div class="container-fluid">
+    <div class="row mb-5">
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                    <div class="card card-info">
+                    
+                        <div class="card-block">
+                            <h2 class="card-title mt-3">Register New</h2>
+                             <h1><i class="center fa fa-plus-square-o fa-6x "></i></h1>
+        
+                        </div>
+                        <div class="card-footer">
+                            <button (click)="onSelectedNew()" class="btn  float-right btn-sm">Register New</button>
+                        </div>
+                    </div>
+                </div>
+        
+
+        <div class="col-sm-6 col-md-4 col-lg-3 mt-4" *ngFor="let orgs of orgData|searchfilter:'orgName':term">
+            <div class="card card-inverse card-info">
+
+                <div class="card-block">
+                  <h4 class="card-title mt-3">{{orgs?.orgName}}</h4>
+                    <div class="meta card-text">
+                        <a>Details</a>
+                    </div>
+                    <div class="card-text">
+                        Location: {{orgs?.address}}
+                    </div>
+                    <div class="card-text">
+                        Website:
+                        <a target="_new" href="http://{{orgs?.website}}">{{orgs?.website}} </a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button (click)="onSelected(orgs)" class="btn  float-right btn-sm"> Complete Registration</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        
+    </div>
+</div>

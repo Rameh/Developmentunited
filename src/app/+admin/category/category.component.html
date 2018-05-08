@@ -1,0 +1,70 @@
+<table class="table">
+  <thead class="thead-default">
+    <tr>
+      <th>Id</th>
+      <th>Category name</th>
+      <th>Date Added</th>
+      <th>Description</th>
+      <th>
+        <button class="btn btn-success" (click)="open(template, null)">New <i class="fa fa-plus"></i> </button>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let category of categories | async">
+      <th scope="row"> {{category.$key}}</th>
+      <td>{{category.name}}</td>
+      <td>{{category.dateAdded | date: 'dd/MM/yyyy hh:mm a'}}</td>
+      <td>{{category.description}}</td>
+      <td>
+        <div class="btn-group" role="group" aria-label="Categories editing buttons">
+          <button type="button" class="btn btn-sm btn-warning" (click)="open(template, category)">
+              <i class="fa fa-pencil"></i>
+          </button>
+          <button type="button" class="btn btn-sm btn-danger" (click)="delete(category)">
+              <i class="fa fa-trash-o"></i>
+          </button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<!--Modal template-->
+<ng-template #template let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <h4 class="modal-title">Upsert category</h4>
+  </div>
+  <div class="modal-body">
+
+    <form #hf="ngForm" novalidate role="form">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" [class.error]="!name.valid" class="form-control" placeholder="Name" [(ngModel)]="currentCategory.name"
+          name="name" ngControl="name" required #name="ngModel" />
+        <div *ngIf="!name.valid && name.touched" class="form-control-feedback">
+          Name is required
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea [class.error]="!description.valid" class="form-control" placeholder="description" [(ngModel)]="currentCategory.description"
+          name="description" ngControl="description" required #description="ngModel"></textarea>
+        <label *ngIf="!description.valid && description.touched" class="form-control-feedback">
+            Description is required
+         </label>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-secondary" [disabled]="!hf.form.valid" (click)="c(currentCategory)">Upsert</button>
+    <button type="button" class="btn btn-warning" (click)="d('Close click')">Close</button>
+  </div>
+</template>
+
+<template ngbModalContainer></template>

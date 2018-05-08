@@ -1,0 +1,305 @@
+<div class="jumbotron jumbotron-billboard">
+    <h2>Project Profile</h2>
+    <div class="img"></div>
+
+    <div class="container">
+        <div class="row" style="text-align:left">
+            <div class="col-lg-7">
+              <!-- <ul style="list-style: none;text-align:right;"> -->
+                    <ul style="list-style: none;">
+                    <li>
+                        <h2>
+                            <b>Name: {{project?.name}}</b>
+                        </h2>
+                    </li>
+                    <li>
+                        <h4>Location: {{project?.projectAddress}}</h4>
+                    </li>
+                    <li>
+                        <h4>Type: {{project?.projectType}}</h4>
+                    </li>
+                    <li>
+                      <h4>Organization: {{project?.orgName}}</h4>Go to profile
+                        <a class="btn btn-lg" (click)="goBack(project?.orgId)">
+                            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                        </a>
+                    
+                    </li>
+
+                </ul>
+
+            </div>
+          
+             <div class="col-lg-5 " style="text-align:left">
+                    <h4>Contact: </h4>
+                    <ul style="list-style: none;text-align:left;">
+                        <li *ngIf="project?.leads.length <= 0 || project?.leads[0].leadName == '' || project?.leads[0].leadName ==  undefined">
+                           Name: NA
+                        </li>
+                        <li *ngIf="project?.leads.length >= 1 && project?.leads[0].leadName != undefined && project?.leads[0].leadName != ''">
+                            Name: {{project?.leads[0].leadName}}
+                        </li>
+                       
+                        <li *ngIf="project?.leads.length <= 0 || project?.leads[0].leadEmail == '' || project?.leads[0].leadEmail == undefined">
+                          Email: NA
+                        </li>
+                        <li *ngIf="project?.leads.length >= 1 && project?.leads[0].leadEmail != undefined && project?.leads[0].leadEmail != ''">
+                          Email: {{project?.leads[0].leadEmail}}
+                        </li>
+                        <li *ngIf="project?.leads.length <= 0 || project?.leads[0].leadPhone == '' || project?.leads[0].leadPhone == undefined">
+                           Phone: NA
+                        </li>
+                        <li *ngIf="project?.leads.length >= 1 && project?.leads[0].leadPhone != undefined && project?.leads[0].leadPhone != ''">
+                            Phone: {{project?.leads[0].leadPhone}}
+                        </li>
+    
+                    </ul>
+    
+                </div>
+        </div>
+        <div class="row" >
+            <div class="col-lg-4" style="text-align:left">
+                <nav class="nav nav-inline">
+                    <a target="_blank" href="https://www.twitter.com/{{project?.projectTwitter}}" class="nav-link">
+                        <span class="ping"></span>
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/{{project?.projectFacebook}}" class="nav-link">
+                        <span class="ping"></span>
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/{{project?.projectYoutube}}" class="nav-link">
+                        <span class="ping"></span>
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/{{project?.projectLinkedin}}" class="nav-link">
+                        <span class="ping"></span>
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://{{project?.projectWebsite}}" class="nav-link">
+                        <span class="ping"></span>
+                        <i class="fa fa-globe"></i>
+                    </a>
+                    <!-- <div *ngIf="project?.leads && project?.leads[0]">
+                    <a href="mailto:{{project?.leads['0'].leadEmail}}" class="nav-link">
+                        <span class="ping"></span>
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                    </div> -->
+                    <a *ngIf=email href="mailto:{{project?.leads['0'].leadEmail}}"  class="nav-link">
+                        <span class="ping"></span>
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                   
+                </nav>
+            </div>
+            <div class="col-lg-3" style="text-align:left"></div>
+
+            <div class="col-lg-5" style="text-align:right">
+               
+                <div *ngIf=admin class="col-lg-5" style="text-align:right">
+                    <a class="btn btn-lg"  >Edit&nbsp;<i (click)="editproject(project?.projectid)" class="fa fa-pencil-square-o fa-2x"></i></a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="divider"></div>
+        <div align='center' class="col-md-12">
+            <h4>Project Description:</h4>
+            <blockquote>{{project?.projectDescription}}</blockquote>
+        </div>
+    </div>
+</div>
+
+
+<div>
+  
+    <!-- <ngui-map zoom="16" centered="true" position="current-location">
+        <marker zoom="16" [position]="{{lat}},{{long}}"></marker>
+        <marker *ngFor="let pos of markerPosition" [position]="[pos.lat,pos.lng]" [icon]="{ url: '../../assets/img/markers/blue-dot.png', anchor: [8,8], size: [35,35], scaledSize: [35,35] }"></marker>
+    </ngui-map> -->
+
+    <!-- <ngui-map 
+    zoom="17" 
+    center="{{lat}},{{long}}" 
+    (mapReady$)="onMapReady($event)"
+    (mapClick)="onMapClick($event)"
+    (idle)="onIdle($event)"
+    [geoFallbackCenter]="[18.578536,-72.3198]" >
+
+    <marker zoom="17" *ngFor="let pos of markerPosition" [position]="[pos.lat,pos.lng]" [icon]="{ url: '../../assets/img/markers/blue-dot.png', anchor: [8,8], size: [35,35], scaledSize: [35,35] }" (initialized$)="onMarkerInit($event)"></marker>
+    
+    </ngui-map> -->
+
+    <ngui-map zoom="13" centered="true" position="current-location" [center]="center" (mapClick)="onMapClick($event)" (idle)="onIdle($event)" [geoFallbackCenter]="[18.578536,-72.3198]">
+        <marker zoom="16" [position]="center"></marker>
+        <marker *ngFor="let pos of markerPosition" (click)="showInfoWindow(pos,$event)" [position]="[pos.lat,pos.lng]" [icon]="{ url: pos.iconUrl, anchor: [8,8], size: [35,35], scaledSize: [35,35] }" (initialized$)="onMarkerInit($event)">
+                            <info-window class="gm-style-iw" id="iw-container">
+                                <div class="iw-container">
+                                    <div class="iw-subTitle" *ngIf="marker.display">
+                                        {{marker.name}}
+                                    </div>
+                                    <div *ngIf="marker.display">
+                                        {{marker.address}}
+                                    </div>
+                                </div>
+                            </info-window>
+        </marker>
+    </ngui-map>    
+</div>
+
+<div class="divider"></div>
+
+<!-- <div class="jumbotron jumbotron-light">
+    <h3 style="text-align: center;">Intervention Mechanisms</h3>
+    <div class="img"></div>
+    <div class="container">
+        <div class="row" *ngIf="project?.interventionmechanisms.length<=0 || project?.interventionmechanisms == undefined || project?.interventionmechanisms == ''">
+            <div class="col-md-12">
+                <div class="callout-light text-center fade-in-b">
+
+                    <h1>No Intervention Mechanisms to list </h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6" *ngFor="let obj1 of project?.interventionmechanisms;">
+                <div class="card">
+                    <div class="card-block">
+                        <h3  class="card-title"> {{obj1.interName}}</h3><h3 *ngIf="obj1.interName == null || obj1.interName == undefined || obj1.interName == ''">Name: NA</h3>
+                        <p  class="card-text">{{obj1.interDescription}}</p><p *ngIf="obj1.interDescription == null || obj1.interDescription == undefined || obj1.interDescription == ''">Description:NA</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div> -->
+
+<div class="jumbotron jumbotron-light">
+    <h3 style="text-align: center;">Intervention Mechanisms</h3>
+    <div class="img"></div>
+    <div class="container">
+        <div class="row" *ngIf="!project?.interventionmechanisms &&  project?.interventionmechanisms == undefined">
+            <div class="col-md-12">
+                <div class="callout-light text-center fade-in-b">
+
+                    <h1>No Intervention Mechanisms to list </h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6" *ngFor="let obj1 of project?.interventionmechanisms;">
+                <div *ngIf="(obj1?.interName != null && obj1?.interName !== '') && (obj1?.interDescription != null && obj1?.interDescription !== '')">
+                <div class="card">
+                    <div class="card-block">
+                         <h3 class="card-title"> {{obj1.interName}}</h3><h3 *ngIf="obj1.interName == null || obj1.interName == undefined || obj1.interName == ''">Name: NA</h3>
+                         <p class="card-text">{{obj1.interDescription}}</p><p *ngIf="obj1.interDescription == null || obj1.interDescription == undefined || obj1.interDescription == ''">Description: NA</p>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="jumbotron jumbotron-light">
+    <h3 style="text-align: center;">Partner Organizations</h3>
+    <div class="img"></div>
+    <div class="container">
+        <div class="row" *ngIf="project?.partnerOrganizations.length<=0 || project?.partnerOrganizations == undefined || project?.partnerOrganizations == ''">
+            <div class="col-md-12">
+                <div class="callout-light text-center fade-in-b">
+
+                    <h1>No Partner Organizations to list </h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6" *ngFor="let partners of project?.partnerOrganizations;">
+                <div class="card">
+                    <div class="card-block">
+                         <h3 class="card-title"> {{partners.partnerName}}</h3><h3 *ngIf="partners.partnerName == null || partners.partnerName == undefined || partners.partnerName == ''">Name: NA</h3>
+                         <p class="card-text">{{partners.partnershipDetails}}</p><p *ngIf="partners.partnershipDetails == null || partners.partnershipDetails == undefined || partners.partnershipDetails == ''">Details: NA</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<section class="sidebar scrollable">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title">Project Details</h3>
+                    <div class="divider"></div>
+                    <ul *ngFor="let details of project?.projectDetails;">
+                        <li style="list-style: none;">
+                            <i class="fa fa-file-text" aria-hidden="true"></i>
+                            <a target="_blank" href="{{details.url}}">{{details.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title">Photos</h3>
+                    <div class="divider"></div>
+                    <ul *ngFor="let photos of project?.projectImages;">
+                        <li style="list-style: none;">
+                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                            <a target="_blank" href="{{photos.url}}">{{photos.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="sidebar scrollable">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title">Project Challenges</h3>
+                    <div class="divider"></div>
+                    <ul *ngFor="let challenges of project?.projectChallenges;">
+                        <li style="list-style: none;">
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                            <a target="_blank" href="{{challenges.url}}">{{challenges.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title">List of partners</h3>
+                    <div class="divider"></div>
+                    <ul *ngFor="let partners of project?.projectPartnersList;">
+                        <li style="list-style: none;">
+                            <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                            <a target="_blank" href="{{partners.url}}">{{partners.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

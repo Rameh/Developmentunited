@@ -1,0 +1,22 @@
+machine:
+  node:
+    version: 6.10.0
+general:
+  branches:
+    ignore:
+      - gh-pages # list of branches to ignore
+      
+dependencies:
+  pre:
+    - rm -rf node_modules
+    - npm i -g @angular/cli angular-cli-ghpages
+
+test:
+  override:
+    - ng build --prod --base-href "https://membership-du-dev.firebaseapp.com"
+# Github deployment
+deployment:
+  production:
+    branch: master
+    commands:
+        - ngh

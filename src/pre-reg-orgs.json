@@ -1,0 +1,1567 @@
+{
+  "8fe3cbfd58" : { "orgStatus":false,
+        "address" : "PAP    NA  NA  NA  HT",
+        "contacts" : [ {
+          "contactEmail" : "Robert@developmentunited.com",
+          "contactName" : "Robert Smith",
+          "contactPhone" : "+4407599469223"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Access Data" ],
+        "latitude" : "51.4825",
+        "longitude" : "-0.0953750",
+        "orgName" : "Development United",
+        "orgType" : "Social Enterprise",
+  
+        "specializations" : [ "Business" ],
+        "twitter" : "ww",
+        "website" : "www.DevelopmentUnited.com"
+      },
+  "3484181ae0" : { "orgStatus":false,
+        "address" : "51 Rue Fernand  Medlab Building  Canape Vert  Port au Prince  HT6110  HT",
+        "contacts" : [ {
+          "contactEmail" : "jason@heroclientrescue.com",
+          "contactName" : "Jason Hersh",
+          "contactPhone" : "509-4944-0400"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Increase Visibility"],
+        "latitude" : "",
+        "longitude" : "",
+        "orgName" : "HERO Client Rescue S.A.",
+        "orgType" : "For-Profit",
+  
+        "specializations" : [ "Business", "Health"],
+        "twitter" : "ww",
+        "website" : "www.heroclientrescue.com"
+      },
+  "45d3155fe0" : { "orgStatus":false,
+        "address" : "3 Route de l'aeroport    Cap Haitien  Nord  N.A.  HT",
+        "contacts" : [ {
+          "contactEmail" : "tedandelisabeth@yahoo.com",
+          "contactName" : "Ted Kaplan,  MD",
+          "contactPhone" : ""
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Increase Visibility", "Access Data", "Network", "Attend/Facilitate Training"],
+        "latitude" : "28.6182",
+        "longitude" : "-81.4421000",
+        "orgName" : "Cap Haitien Health Network",
+        "orgType" : "Umbrella Organization",
+  
+        "specializations" : [ "Health"],
+        "twitter" : "ww",
+        "website" : "www.caphealthnet.org"
+      },
+  "24dc4ee7d3" : { "orgStatus":false,
+        "address" : "Port au Prince    Port au Prince  Port au Prince  000000  HT",
+        "contacts" : [ {
+          "contactEmail" : "rachael@soleawater.org",
+          "contactName" : "Rachael Burchett",
+          "contactPhone" : ""
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Increase Visibility", "Access Data", "Network", "Attend/Facilitate Training"],
+        "latitude" : "38.582",
+        "longitude" : "-90.2642000",
+        "orgName" : "Solea Water",
+        "orgType" : "INGOs",
+  
+        "specializations" : [ "Short Term Volunteer Trips", "Water And Sanitation", "Women"],
+        "twitter" : "ww",
+        "website" : "www.soleawater.org"
+      },
+  "517c45e440" : { "orgStatus":false,
+        "address" : "44, Delmas 60 Rue maurepas Port-au-Prince Haïti / # 22, Jacme Lamandou    Delmas  Port-au-Prince  00509  HT",
+        "contacts" : [ {
+          "contactEmail" : "ovp.htc@gmail.com",
+          "contactName" : "Jean Auguste Andral",
+          "contactPhone" : "50932273284"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Increase Visibility", "Access Data", "Network", "Attend/Facilitate Training", "Attend/Facilitate Workshops", "Funding"],
+        "latitude" : "38.582",
+        "longitude" : "-90.2642000",
+        "orgName" : "Union des Jeunes pour le Développement Local (UJDL)",
+        "orgType" : "Local NGO",
+  
+        "specializations" : [ "Child: Orphanages", "Child: Sponsorship", "Child: Feeding Programs", "Disaster Relief", "Education: Preschool", "Education: Elementary", "Education: high school", "Education: university", "Education: trade school", "Environment", "Food: Food Aid Relief", "Food: Food Sustainability", "Food: agroecology", "Health", "Micro Finance", "Sports", "Water And Sanitation", "Women"],
+        "twitter" : "ww",
+        "website" : "www.ovphaiti.wordpress.com"
+      },
+  "43763a1d9d" : { "orgStatus":false,
+        "address" : "4A , Traversiere Street  Les Anglais  Les Anglais  Chardonniere  HT 8520  HT",
+        "contacts" : [ {
+          "contactEmail" : "wendy@earthsparkinternational.org",
+          "contactName" : "Wendy Sanassee",
+          "contactPhone" : "+509 4856 6604"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Funding", "Access Data", "Network", "Attend/Facilitate Training", "Attend/Facilitate Workshops", " Increase Visibility"],
+        "latitude" : "38.582",
+        "longitude" : "-90.2642000",
+        "orgName" : "EarthSpark International",
+        "orgType" : "INGOs",
+  
+        "specializations" : [ "Research", "Science And Technology"],
+        "twitter" : "ww",
+        "website" : "www.earthsparkinternational.org"
+      },
+  "057ee16c14" : { "orgStatus":false,
+        "address" : "Rte. de Saut d'Eau    Mirebalais  Centre  00000  HT",
+        "contacts" : [ {
+          "contactEmail" : "Laura@schoolofchoice.org",
+          "contactName" : "Laura Hartman",
+          "contactPhone" : "+1-312-493-9929"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Access Data", "Network", " Increase Visibility"],
+        "latitude" : "41.899",
+        "longitude" : "-87.6365000",
+        "orgName" : "School of Choice / l'Ecole de Choix (Haiti)",
+        "orgType" : "INGOs",
+  
+        "specializations" : [ "Research", "Science And Technology"],
+        "twitter" : "ww",
+        "website" : "www.schoolofchoice.org"
+      },
+  "d2b670ad6e" : { "orgStatus":false,
+        "address" : "Hopital Universitaire de Mirebalais Blood Bank    Mirebalais  Central plateau  0000000  HT",
+        "contacts" : [ {
+          "contactEmail" : "erin@globalhealing.org",
+          "contactName" : "Erin",
+          "contactPhone" : "510-898-1859"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Access Data", "Network", "Find Partners"],
+        "latitude" : "37.8993",
+        "longitude" : "-122.2760000",
+        "orgName" : "Global Healing",
+        "orgType" : "INGOs",
+  
+        "specializations" : [ "Health"],
+        "twitter" : "ww",
+        "website" : "www.globalhealing.org"
+      },
+  "86b18a568e" : { "orgStatus":false,
+        "address" : "Nordette and Mathone    Denver  Co  80209  HT",
+        "contacts" : [ {
+          "contactEmail" : "rebecca@theroadtohope.org",
+          "contactName" : "Rebecca Harris",
+          "contactPhone" : "5712131322"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Access Data", "Network", "Find Partners", "Attend/Facilitate Workshops", "Attend/Facilitate Training", "Increase Visibility"],
+        "latitude" : "39.6983",
+        "longitude" : "-105.0330000",
+        "orgName" : "The Road to Hope",
+        "orgType" : "INGOs",
+  
+        "specializations" : [ "Child: Feeding Programs", "Education: Preschool", "Education: Elementary", "Food: Food Aid Relief", "Food: Food Sustainability"],
+        "twitter" : "ww",
+        "website" : "www.theroadtohope.org"
+      },
+  "ca1b6f74ee" : { "orgStatus":false,
+        "address" : "Block D room 16 former Ministry of Works  Oke-Ilewo Abeokuta  Abeokuta  OGUN  110001  NG",
+        "contacts" : [ {
+          "contactEmail" : "jisolaus@yahoo.com",
+          "contactName" : "Ms Mojisola Akinsanya",
+          "contactPhone" : "2348033276770"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Access Data", "Find Partners", "Attend/Facilitate Workshops", "Increase Visibility"],
+        "latitude" : "6.44116",
+        "longitude" : "3.41798",
+        "orgName" : "Women for Peace and Gender Equality Initiative",
+        "orgType" : "Local NGO",
+  
+        "specializations" : [ "Child: Feeding Programs", "Child: Sponsorship", "Child: Feeding Programs", "Education: Elementary", "Education: high school", "Food: Food Aid Relief", "Health", "Human rights", "Research", "Water And Sanitation", "Women"],
+        "twitter" : "ww",
+        "website" : "www.wopegee.org"
+      },
+  "838eb513b1" : { "orgStatus":false,
+        "address" : "Dont work in Haiti. 300 Craig Rd, Ste 215,    Manalapan  New Jersey  07726  US",
+        "contacts" : [ {
+          "contactEmail" : "ariabtsun@gloriumtech.com",
+          "contactName" : "Alexandra Riabtsun",
+          "contactPhone" : "888-354-0883"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Network", "Increase Visibility"],
+        "latitude" : "50.4409",
+        "longitude" : "30.5272",
+        "orgName" : "Glorium Technologies",
+        "orgType" : "",
+  
+        "specializations" : [ "Science And Technology"],
+        "twitter" : "ww",
+        "website" : "https://gloriumtech.com"
+      },
+  "1a4b0b40b0" : { "orgStatus":false,
+        "address" : "Q 47    La Digue  Arcahaie  56477  HT",
+        "contacts" : [ {
+          "contactEmail" : "tanja@710foundation.org",
+          "contactName" : "Tanja Dwire",
+          "contactPhone" : "2186395257"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Funding", "Increase Visibility"],
+        "latitude" : "44.9453",
+        "longitude" : "-93.0941000",
+        "orgName" : "7:10 Foundation",
+        "orgType" : "Religious Organization",
+  
+        "specializations" : [ "Child: Feeding Programs", "Faith: Teaching", "Food: Food Sustainability", "Women"],
+        "twitter" : "ww",
+        "website" : "www.710foundation.org"
+      },
+  "ae7e797e43" : { "orgStatus":false,
+        "address" : "Kavio    Port-Salut  Cayes  33333  HT",
+        "contacts" : [ {
+          "contactEmail" : "debbie@hhangels.org",
+          "contactName" : "Debbie harvey",
+          "contactPhone" : "7032983183"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training"],
+        "latitude" : "27.9545",
+        "longitude" : "-82.4571000",
+        "orgName" : "Heart for Home Ministries",
+        "orgType" : "Religious Organization",
+  
+        "specializations" : [ "Child: Orphanages", "Child: Sponsorship", "Education: Preschool", "Education: Elementary", "Faith: Teaching", "Food: Food Sustainability", "Short Term Volunteer Trips", "Women"],
+        "twitter" : "ww",
+        "website" : "Www.heartforhomehaiti.com"
+      },
+  "d8c6c17805" : { "orgStatus":false,
+        "address" : "24, rue Pacot, Port-au-Prince Port-au-Prince Ouest HT6110 HT",
+        "contacts" : [ {
+          "contactEmail" : "pelie@haitipay.ht",
+          "contactName" : "Pascale Elie",
+          "contactPhone" : "+50933884092"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Funding", "Increase Visibility", "Access Data", "Network"],
+        "latitude" : "",
+        "longitude" : "",
+        "orgName" : "HaitiPay",
+        "orgType" : "",
+  
+        "specializations" : [ "Business", "Micro Finance", "Science And Technology", "Women"],
+        "twitter" : "ww",
+        "website" : "Www.lajancash.com"
+      },
+  "46ff919d84" : { "orgStatus":false,
+        "address" : "Terre Froide, Fonds-Verrettes, Haiti Terre Froide Fonds-Verrettes 000000  HT",
+        "contacts" : [ {
+          "contactEmail" : "lamiamakkar@gmail.com",
+          "contactName" : "Lamia Makkar",
+          "contactPhone" : "+17035595570"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Funding", "Increase Visibility", "Network"],
+        "latitude" : "",
+        "longitude" : "",
+        "orgName" : "Haiti: Hands On",
+        "orgType" : "INGOs",
+  
+        "specializations" : [ "Education: Preschool", "Education: Elementary", "Micro Finance"],
+        "twitter" : "ww",
+        "website" : "Www.haitihandson.org"
+      },
+  "9dd6bc3956" : { "orgStatus":false,
+        "address" : "37, Rue Bourbon, Ouanaminthe  CP HAVESON FLORVIL ENTREPRISES  Ouanaminthe  Nord-Est  HT210  HT",
+        "contacts" : [ {
+          "contactEmail" : "fhaveson@gmail.com",
+          "contactName" : "Haveson Florvil",
+          "contactPhone" : "+50933386411"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Access Data", "Attend/Facilitate Training", "Network"],
+        "latitude" : "30.2802",
+        "longitude" : "-81.5464000",
+        "orgName" : "ALPHANET",
+        "orgType" : "Social Enterprise",
+  
+        "specializations" : [ "Business", "Research", "Science And Technology"],
+        "twitter" : "ww",
+        "website" : "www.camp-leadership.com"
+      },
+  "7feca71d4b" : { "orgStatus":false,
+        "address" : "Urban Innovation Centre  1 Sekforde Street  London  London  EC1R )BE  GB",
+        "contacts" : [ {
+          "contactEmail" : "john@gatherhub.org",
+          "contactName" : "John Peter Archer",
+          "contactPhone" : "7851966846"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Increase Visibility", "Access Data", "Network"],
+        "latitude" : "",
+        "longitude" : "",
+        "orgName" : "Gather",
+        "orgType" : "INGOs",
+  
+        "specializations" : [ "Water And Sanitation", "Science And Technology"],
+        "twitter" : "ww",
+        "website" : "www.gatherhub.org"
+      },
+  "5717b60926" : { "orgStatus":false,
+        "address" : "11 Rue Richard Jules    Port au Prince  Port au Prince  Delmas 75  HT",
+        "contacts" : [ {
+          "contactEmail" : "mcdaniel.ct@outlook.com",
+          "contactName" : "Chuck McDaniel",
+          "contactPhone" : "+1-513-520-8737"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Access Data", "Network"],
+        "latitude" : "39.6448",
+        "longitude" : "-85.1575000",
+        "orgName" : "Partners Worldwide",
+        "orgType" : "Social Enterprise",
+  
+        "specializations" : [ "Business"],
+        "twitter" : "ww",
+        "website" : "www.partnersworldwide.org"
+      },
+  "4a7d3f2c4c" : { "orgStatus":false,
+        "address" : "Grand'Anse Province  NA  NA  NA  NA  HT",
+        "contacts" : [ {
+          "contactEmail" : "labboy@earthlink.net",
+          "contactName" : "Bob Downey",
+          "contactPhone" : "+1-619-905-7157"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Access Data", "Network", "Funding", "Attend/Facilitate Workshops","Attend/Facilitate Training", "Increase Visibility"],
+        "latitude" : "41.7256",
+        "longitude" : "-87.8743000",
+        "orgName" : "Seattle-King County Disaster Team",
+        "orgType" : "INGOs",
+  
+        "specializations" : [ "Disaster Relief", "Health", "Short Term Volunteer Trips"],
+        "twitter" : "ww",
+        "website" : "http://www.skcdteam.org/"
+      
+  },
+  "88fa3a0b2e" : { "orgStatus":false,
+        "address" : "Williamson, Haiti  Luly, Haiti  Gonaives, Haiti  Arcahaie, Haiti  Tavares, H  HT",
+        "contacts" : [ {
+          "contactEmail" : "rmortensen@worldwidevillage.org",
+          "contactName" : "Randy Mortensen",
+          "contactPhone" : "+1-321-427-2201"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Access Data", "Network", "Funding", "Attend/Facilitate Workshops","Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "World Wide Village",
+        "orgType" : "INGOs",
+  
+        "specializations" : [ "Business", "Child: Sponsorship", "Education: Preschool", "Education: Elementary", "Education: High School", "Education: Trade School", "Environment", "Faith: Churches", "Faith: Teaching", "Food: Food Aid Relief", "Food: Food Sustainability", "Food: Agroecology", "Health", "Micro Finance", "Short Term Volunteer Trips", "Water And Sanitation", "Women"],
+        "twitter" : "ww",
+        "website" : "https://worldwidevillage.org/"
+  },
+  "d5b7276ebe" : { "orgStatus":false,
+        "address" : "Santo 17 & Downtown    Port-au-Prince  Haiti  NA  HT",
+        "contacts" : [ {
+          "contactEmail" : "info@stvincentshaiti.org",
+          "contactName" : "Jennifer Wickham",
+          "contactPhone" : "2105486996"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Access Data", "Network", "Funding", "Attend/Facilitate Workshops","Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Saint Vincent's Centre for Handicapped Children",
+        "orgType" : "Religious Organization",
+  
+        "specializations" : [ "Education: Preschool, Education: Elementary, Health"],
+        "twitter" : "ww",
+        "website" : "stvincentshaiti.org"
+      },
+  "d5b7276ebf" : { "orgStatus":false,
+        "address" : "2315 Westclub Terrace Court Wildwood MO 63011 US",
+        "contacts" : [ {
+          "contactEmail" : "BRIAN@COMMUNITYOFHOPEHAITI.ORG",
+          "contactName" : "Brian Tucker",
+          "contactPhone" : "+50938535200"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Network", "Increase Visibility"],
+        "orgName" : "Community of Hope Haiti",
+        "orgType" : "Humanitarian Organization",
+  
+        "specializations": [
+          "Education: Elementary",
+          "Education: High School",
+          "Faith: Teaching",
+          "Food: Food Sustainability",
+          "Food: Agroecology",
+          "Health",
+          "Micro Finance",
+          "Short Term Volunteer Trips",
+          "Water And Sanitation"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.communityofhopehaiti.org"
+  },
+  "f36afca4cd" : { "orgStatus":false,
+        "address" : "Bas Pinal Children's Home Bas Pinal  Nord  n/a  HT",
+        "contacts" : [ {
+          "contactEmail" : "sheri@shoulder2shoulderhaiti.com",
+          "contactName" : "Sheri Collins",
+          "contactPhone" : "+423-284-3240"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Access Data", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Shoulder to Shoulder with Haiti",
+        "orgType" : "Humanitarian Organization",
+  
+        "specializations": [
+          "Child: Orphanages",
+          "Food: Food Sustainability",
+          "Short Term Volunteer Trips"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.shoulder2shoulderhaiti.com"
+  
+  },
+  "2514ea134a" : { "orgStatus":false,
+        "address" : "Pelerin 3, gate #5    Port au Prince  Pelerin  HT 160  HT",
+        "contacts" : [ {
+          "contactEmail" : "myriam.legros@gmail.com",
+          "contactName" : "Myriam Legros",
+          "contactPhone" : "(509)38365689"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Attend/Facilitate Workshops", "Network", "Increase Visibility"],
+        "orgName" : "Fides Management",
+        "orgType" : "For-Profit",
+  
+        "specializations": [
+          "Business",
+          "Disaster Relief",
+          "Micro Finance",
+          "Water And Sanitation"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "http://www.managementfides.com/fides-management-home.html"
+  
+  },
+  "2b4c1f919d" : { "orgStatus":false,
+        "address" : "Rue Magloire Ambroise #50    Jacmel  Jacmel  HT9110  HT",
+        "contacts" : [ {
+          "contactEmail" : "kenol.david@gmail.com",
+          "contactName" : "Kenol David",
+          "contactPhone" : "347-688-2257"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Jacomelo",
+        "orgType" : "Social Enterprise",
+  
+        "specializations": [
+          "Business",
+          "Research"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.jacomelo.ht"
+  
+  
+  
+  
+  },
+  "73da0b7258" : { "orgStatus":false,
+        "address" : "09, Ave Gaston, Rue Boyer, petit-Goave  08, Ave Mais gate, Rue Bethanie2#3  Petit-Goave  Ouest  HT6162  HT",
+        "contacts" : [ {
+          "contactEmail" : "cradophaiti@gmail.com",
+          "contactName" : "Merjuste Gregory",
+          "contactPhone" : "+50937311853"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Network"],
+        "orgName" : "CRADOP : Centre de Recherche, d'Accompagnement et d'Orientation Professionnelle",
+        "orgType" : "Social Enterprise",
+  
+        "specializations": [
+          "Business",
+          "Education: Elementary",
+          "Education: High School",
+          "Education: University",
+          "Micro Finance",
+          "Short Term Volunteer Trips"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.cradophaiti.wordpress.com"
+  
+  
+  },
+  "9931b683c0" : { "orgStatus":false,
+        "address" : "Delmas 33 rue Charbonnières #52    Port au Prince  oueste  HT6120  HT",
+        "contacts" : [ {
+          "contactEmail" : "vpierre@medicalteams.org",
+          "contactName" : "Dr. Vanessa Pierre",
+          "contactPhone" : "+50937910856"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Medical Teams International",
+        "orgType" : "INGOs",
+  
+        "specializations": [
+          "Health"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.medicalteams.org"
+  
+  
+  },
+  "f526ea148c" : { "orgStatus":false,
+        "address" : "Haïti  5, rue Previlon, Caillot-Ville  Port -de-Paix  Nord Ouest  3110  HT",
+        "contacts" : [ {
+          "contactEmail" : "haitiactioncollective@gmail.com",
+          "contactName" : "Amos Florantin",
+          "contactPhone" : "50947597758"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Network", "Attend/Facilitate Training"],
+        "orgName" : "Haïti Action Collective (HACC)",
+        "orgType" : "Local NGO",
+  
+        "specializations": [
+          "Child: Feeding Programs",
+          "Disaster Relief",
+          "Environment",
+          "Food: Food Aid Relief",
+          "Health",
+          "Water And Sanitation"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "http: www.faceboo.com/Hacc2013"
+  
+  },
+  "5fc4d1cf20" : { "orgStatus":false,
+        "address" : "Mandirathil Towers, Near Panchayath Junction  Pathanapuram  Kollam  Kerala  689695  IN",
+        "contacts" : [ {
+          "contactEmail" : "sajeev@corporate360.us",
+          "contactName" : "Sajeev P",
+          "contactPhone" : "+91 9947320227"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" :  "[Funding]",
+        "orgName" : "Corporate360",
+        "orgType" : "For-Profit",
+  
+        "specializations": [
+          "Business"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "http: www.faceboo.com/Hacc2013"
+
+  },
+  
+  "f654b21de6" : { "orgStatus":false,
+        "address" : "UNDP Unité de gestion des risques et désastres  Delmas 56  Port au Prince  Haïti  HT6120  HT",
+        "contacts" : [ {
+          "contactEmail" : "contact@risksimex.com",
+          "contactName" : "COVA Philippe",
+          "contactPhone" : "+ 50936162999 ou +33762141184"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Increase Visibility"],
+        "orgName" : "Risk & Simex Consult",
+        "orgType" : "For-Profit",
+  
+        "specializations": [
+          "Disaster Relief",
+          "Refugees",
+          "Water And Sanitation"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "NA"
+  
+  },
+  "c15b6047c3" : { "orgStatus":false,
+        "address" : "F 25, I floor, Shriram Sadhana Apartments, Gokula    Bangalore  Karnataka  560054  IN",
+        "contacts" : [ {
+          "contactEmail" : "chira.workshop@gmail.com",
+          "contactName" : "Rachana Prasad",
+          "contactPhone" : "+919945232961"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Attend/Facilitate Workshops", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "CHIRANTHANA",
+        "orgType" : "Social Enterprise",
+  
+        "specializations": [
+          "Education: Elementary",
+          "Education: High School",
+          "Education: University",
+          "Women"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.chiranthana.in"
+  
+  },
+  "749f91999f" : { "orgStatus":false,
+        "address" : "Gressier, Haiti    Gressier  NA  NA  HT",
+        "contacts" : [ {
+          "contactEmail" : "philffcc@san.rr.com",
+          "contactName" : "Phil Harris",
+          "contactPhone" : "858-204-9643"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners, Access Data, Network"],
+        "orgName" : "Friends and Family Community Connection",
+        "orgType" : "INGOs",
+  
+        "specializations": [
+          "Business",
+          "Child: Orphanages",
+          "Child: Sponsorship",
+          "Child: Feeding Programs",
+          "Disaster Relief",
+          "Education: Preschool",
+          "Education: Elementary",
+          "Education: High School",
+          "Education: University",
+          "Education: Trade School",
+          "Environment",
+          "Faith: Churches",
+          "Food: Food Aid Relief",
+          "Food: Food Sustainability",
+          "Food: Agroecology",
+          "Health",
+          "Human Rights",
+          "Micro Finance",
+          "Refugees",
+          "Short Term Volunteer Trips",
+          "Sports",
+          "Water And Sanitation"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.ffccsd.org"
+  
+  },
+  "3278357617" : { "orgStatus":false,
+        "address" : "Clinique Sant esprit  sante #7  crouch  Des Bouquet  NA  HT",
+        "contacts" : [ {
+          "contactEmail" : "aprileperry042@hotmail.com",
+          "contactName" : "April Perry",
+          "contactPhone" : "NA"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase our visibilit"],
+        "orgName" : "Luke's Mission",
+        "orgType" : "INGOs",
+  
+        "specializations": [
+          "Business",
+          "Child: Orphanages",
+          "Child: Sponsorship",
+          "Child: Feeding Programs",
+          "Disaster Relief",
+          "Education: Preschool",
+          "Education: Elementary",
+          "Education: High School",
+          "Education: University",
+          "Education: Trade School",
+          "Environment",
+          "Faith: Churches",
+          "Food: Food Aid Relief",
+          "Food: Food Sustainability",
+          "Food: Agroecology",
+          "Health",
+          "Human Rights",
+          "Micro Finance",
+          "Refugees",
+          "Short Term Volunteer Trips",
+          "Sports",
+          "Water And Sanitation"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.lukesmission.com"
+  
+  },
+  "5cdf7551f7" : { "orgStatus":false,
+        "address" : "950 St. Elizabeth Drive    San Jose  CA  95126  US",
+        "contacts" : [ {
+          "contactEmail" : "lisa@morgancenter.org",
+          "contactName" : "Lisa Lemke",
+          "contactPhone" : "(408) 241-8161"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners"],
+        "orgName" : "Morgan Autism Center",
+        "orgType" : "Local NGO",
+  
+        "specializations": [
+          "Education: Elementary",
+          "Education: High School"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "http://www.morgancenter.org"
+  
+  },
+  "1333f3ee54" : { "orgStatus":false,
+        "address" : "#71, Impasse Saint-marc, Pétion-ville, Haiti    Pétion-ville  Pétion-ville  ht6141  HT",
+        "contacts" : [ {
+          "contactEmail" : "cocreadhaiti@gmail.com",
+          "contactName" : "Ralph Emmanuel Francois",
+          "contactPhone" : "+50937537185"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "CoCread (Co-creating development )",
+        "orgType" : "Social Enterprise",
+  
+        "specializations": [
+          "Business",
+          "Disaster Relief",
+          "Environment",
+          "Micro Finance",
+          "Science And Technology",
+          "Women"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.cocread.org"
+  },
+  "65ba5a551c" : { "orgStatus":false,
+        "address" : "Route Nationale #6, Limonade, Haiti    Limonade  Cap-Haitien/ Nord  HT1161  HT",
+        "contacts" : [ {
+          "contactEmail" : "pierrestanley65@gmail.com",
+          "contactName" : "Pizzar Stanley PIERRE",
+          "contactPhone" : "(+509)37542025"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase our visibilit"],
+        "orgName" : "Youth Climate",
+        "orgType" : "INGOs",
+  
+        "specializations": [
+          "Environment",  "Food: Food Sustainability",
+          "Food: Agroecology",
+          "Water And Sanitation"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.coy13.org"
+  },
+  "a670b6f464" : { "orgStatus":false,
+        "address" : "19 rue Pelican    Port-au-Prince  Ouest  HT6123  HT",
+        "contacts" : [ {
+          "contactEmail" : "cd@haiti.communitere.org",
+          "contactName" : "Janet Ilott",
+          "contactPhone" : "50939962324"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Haiti Communitere",
+        "orgType" : "Local NGO",
+  
+        "specializations" : [ "NA"],
+        "twitter" : "ww",
+        "website" : "www.haiti.communitere.org"
+  },
+  "2e560db582" : { "orgStatus":false,
+        "address" : "#3, Rue Arthemis, Tabarre  #3, Rue Arthemis  Tabarre  Ouest  509  HT",
+        "contacts" : [ {
+          "contactEmail" : "adelin.pierre@hotmail.com",
+          "contactName" : "Adelin PIERRE",
+          "contactPhone" : "+50936370267/+50933215575"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training"],
+        "orgName" : "Conseil Consultatif des Jeunes",
+        "orgType" : "Local NGO",
+  
+        "specializations": [
+          "Environment",
+          "Human Rights"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "https://www.facebook.com/ccjhaiti/?fref=ts"
+  },
+  "f4e5e04308" : { "orgStatus":false,
+        "address" : "23 Davis Road Cross  St. Thomas Town  Bangaore  Karnataka  560084  IN",
+        "contacts" : [ {
+          "contactEmail" : "mymailaudrey@gmail.com",
+          "contactName" : "Audrey Dsouza",
+          "contactPhone" : "9844054686"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Women Entrepreneurs Chambers and Association Network (WeCAN)",
+        "orgType" : "Social Enterprise",
+  
+        "specializations": [
+          "Education: Trade School",
+          "Women"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.wecanindia.org.in"
+  
+  },
+  "1a28639dab" : { "orgStatus":false,
+        "address" : "20 Avenue Lamartinière, quartier Bois Verna    Port-au-Prince  Port-au-Prince  HT6114  HT",
+        "contacts" : [ {
+          "contactEmail" : "sarah@yesakademia.ong",
+          "contactName" : "Sarah Gogel",
+          "contactPhone" : "+33(0)603508794"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Yes Akademia",
+        "orgType" : "INGOs",
+  
+        "specializations": [
+          "Education: High School",
+          "Education: University",
+          "Short Term Volunteer Trips"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "http://yesakademia.ong/"
+  
+  },
+  "47d75eb3af" : { "orgStatus":false,
+        "address" : "19 Rue Pelican, Clercine 4    Port-au-Prince  West  6122  HT",
+        "contacts" : [ {
+          "contactEmail" : "jessica@kouzindlo.com",
+          "contactName" : "Jessica Laporte",
+          "contactPhone" : "509-4494-7341"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Increase Visibility"],
+        "orgName" : "Kouzin Dlo",
+        "orgType" : "Social Enterprise",
+  
+        "specializations": [
+          "Business",
+          "Health",
+          "Water And Sanitation"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.kouzindlo.com"
+  },
+  "eac7f18560" : { "orgStatus":false,
+        "address" : "Zimbabwe    Kwekwe  Midlands  +263  ZW",
+        "contacts" : [ {
+          "contactEmail" : "beemadzimure@gmail.com",
+          "contactName" : "Edwick madzimure",
+          "contactPhone" : "+263719856699"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Network", "Increase Visibility"],
+        "orgName" : "Wilpf'- Zimbabwe",
+        "orgType" : "INGOs",
+  
+        "specializations": [
+          "Environment",
+          "Food: Food Sustainability",
+          "Human Rights",
+          "Refugees",
+          "Water And Sanitation",
+          "Women"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.wilpf.org/zimbabwe"
+  },
+  "1f6e1f32ba" : { "orgStatus":false,
+        "address" : "Petite place cazeau,ri  Rue la paix #3  Delmas  Haiti  N/A  HT",
+        "contacts" : [ {
+          "contactEmail" : "adm.fada@yahoo.fr",
+          "contactName" : "Plaisir ElizAɢ",
+          "contactPhone" : "33692648"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "NA"],
+        "orgName" : "Fondation Amour de Dieu en Action",
+        "orgType" : "Local NGO",
+  
+        "specializations": [
+          "Disaster Relief",
+          "Environment",
+          "Food: Food Aid Relief",
+          "Micro Finance",
+          "Water And Sanitation"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "NA"
+  },
+  "cae700581c" : { "orgStatus":false,
+        "address" : "Thomassique, Haiti (in the Central Plateau)  Rte. 308  Thomassique  Central Plateau  33967  US",
+        "contacts" : [ {
+          "contactEmail" : "peterdirr@gmail.com",
+          "contactName" : "Peter J. Dirr, Ph.D",
+          "contactPhone" : "5712396380"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Find Partners", "Access Data", "Network"],
+        "orgName" : "Medical Missionaries",
+        "orgType" : "INGOs",
+  
+        "specializations": [
+          "Child: Feeding Programs",
+          "Disaster Relief",
+          "Food: Food Aid Relief",
+          "Food: Food Sustainability",
+          "Food: Agroecology",
+          "Health",
+          "Short Term Volunteer Trips",
+          "Water And Sanitation",
+          "Women"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.medmissionaries.org"
+  },
+  "aeded61b73" : { "orgStatus":false,
+        "address" : "Rue Kelly Guerrier, # 14  Chatulée  Mirebalais  Centre  02301  US ",
+        "contacts" : [ {
+          "contactEmail" : " info@ilchaiti.com ",
+          "contactName" : "Jacky Poteau",
+          "contactPhone" : "5085773488"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Innovative Learning Concepts",
+        "orgType" : "Social Enterprise",
+  
+        "specializations": [
+          "Education: Trade School"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.ilchaiti.com"
+  },
+  "71fe44d5a0" : { "orgStatus":false,
+        "address" : "1 Dumesnil (Nan Talon)    Limonade  Haiti  WI  HT",
+        "contacts" : [ {
+          "contactEmail" : "gacent@gmail.com",
+          "contactName" : "Gabrielle Aurel",
+          "contactPhone" : "011-509-3-739-0725"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Sonje Ayiti Organization (SAO)",
+        "orgType" : "Local NGO",
+  
+        "specializations": [
+          "Business",
+          "Child: Sponsorship",
+          "Child: Feeding Programs",
+          "Education: Preschool",
+          "Education: Elementary",
+          "Education: High School",
+          "Education: University",
+          "Education: Trade School",
+          "Food: Food Sustainability",
+          "Health",
+          "Micro Finance",
+          "Short Term Volunteer Trips",
+          "Water And Sanitation",
+          "Women"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.sonjeayiti.org"
+  
+  },
+  "1e0a0fc9d9" : { "orgStatus":false,
+        "address" : "Marin 17 #2A  Route National #1  Croix des Bouquets  La Plaine  00509  HT",
+        "contacts" : [ {
+          "contactEmail" : "cesarmuller32@gmail.com",
+          "contactName" : "Mrs. Nicole Muller Cesar",
+          "contactPhone" : "+50934641535"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Institute of Human and Community Development  (IHCD)",
+        "orgType" : "Humanitarian Organization",
+  
+        "specializations": [
+          "Child: Sponsorship",
+          "Child: Feeding Programs",
+          "Disaster Relief",
+          "Education: Preschool",
+          "Education: Elementary",
+          "Environment",
+          "Food: Food Aid Relief",
+          "Food: Food Sustainability",
+          "Health",
+          "Human Rights",
+          "Micro Finance",
+          "Research",
+          "Science And Technology",
+          "Short Term Volunteer Trips",
+          "Sports",
+          "Water And Sanitation",
+          "Women"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "ihcd.org"
+  },
+  "d606a56e22" : { "orgStatus":false,
+        "address" : "Cite Soleil, Haiti  Cite Soleil, Haiti  Port au Prince  Ouest  HT6122  HT",
+        "contacts" : [ {
+          "contactEmail" : "robillard.louino@gmail.com",
+          "contactName" : "NB",
+          "contactPhone" : "+509 3844 81 72"
+        } ],
+   
+        "facebook" : "ww",
+        "interests" : [ "Attend/Facilitate Training"],
+        "orgName" : "KONBIT SOLEY LEVE",
+        "orgType" : "Umbrella Organization",
+  
+        "specializations": [
+          "Environment",
+          "Human Rights",
+          "Sports"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "https://www.konbitsoleyleve.com/konbit-soley-leve"
+  
+  
+  },
+  "244be47719" : { "orgStatus":false,
+        "address" : "Cite Soleil    Cite Soleil  Port au prince  000000  HT",
+        "contacts" : [ {
+          "contactEmail" : "erikb@thesannehfoundation.org",
+          "contactName" : "erik biscoe",
+          "contactPhone" : "9737152445"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Increase Visibility"],
+        "orgName" : "Haitain initiative",
+        "orgType" : "INGOs",
+  
+        "specializations": [
+          "Child: Sponsorship",
+          "Child: Feeding Programs",
+          "Education: Preschool",
+          "Education: Elementary",
+          "Education: High School",
+          "Research",
+          "Short Term Volunteer Trips",
+          "Sports"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.haitianinitiative.org"
+  },
+  "616330f0c5" : { "orgStatus":false,
+    "address" : "Morne-A-leau, Anse-,a-Galets, La Gonave Island, Haiti    Haiti  La Gonave  509  HT",
+        "contacts" : [ {
+          "contactEmail" : "rony.touss@gmail.com",
+          "contactName" : "Jean Rony Toussaint",
+          "contactPhone" : "509-3114-0527"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "ASHOG MINISTRIES",
+        "orgType" : "Humanitarian Organization",
+  
+        "specializations": [
+          "Child: Orphanages",
+          "Child: Sponsorship",
+          "Child: Feeding Programs",
+          "Disaster Relief",
+          "Education: Preschool",
+          "Education: Elementary",
+          "Education: High School",
+          "Education: University",
+          "Education: Trade School",
+          "Environment",
+          "Faith: Churches",
+          "Faith: Teaching",
+          "Food: Food Aid Relief",
+          "Food: Food Sustainability",
+          "Health",
+          "Human Rights",
+          "Refugees",
+          "Water And Sanitation"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.ashoghaiti.com"
+  },
+  "e63cac9b1a" : { "orgStatus":false,
+        "address" : "Ruelle Flora 92, Madeline, Cap Haitien, Haiti  US Address: PO Box 913, Mount Kisco, NY 10549 USA  Madeline, Cap Haitien  Nord HT",
+        "contacts" : [ {
+          "contactEmail" : "kschecter@handsupforhaiti.org",
+          "contactName" : "Karen Akst Schecter",
+          "contactPhone" : "914-523-6572"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Increase Visibility"],
+        "orgName" : "Hands Up for Haiti",
+        "orgType" : "Humanitarian Organization",
+  
+        "specializations": [
+          "Health"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "http://www.handsupforhaiti.org"
+  },
+  "8fd0483400" : { "orgStatus":false,
+        "address" : "1er Aʴage du # 109 a la rue pavée; Port-au-Prince / Haiti    Port-au-Prince  Rue Pavee  HT 8110  HT",
+        "contacts" : [ {
+          "contactEmail" : "cozpam10@gmail.com",
+          "contactName" : "Jean Robert PIERRE",
+          "contactPhone" : "(+509) 3445-8602"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Plateforme des Associations Communautaires de la Zone Métropolitaine (COZPAM)",
+        "orgType" : "Local NGO",
+  
+        "specializations": [
+          "Child: Orphanages",
+          "Child: Sponsorship",
+          "Child: Feeding Programs",
+          "Education: Elementary",
+          "Environment",
+          "Food: Food Aid Relief",
+          "Food: Food Sustainability",
+          "Food: Agroecology",
+          "Human Rights",
+          "Micro Finance",
+          "Water And Sanitation",
+          "Women"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "Pas encore"
+  },
+  "2d8780af68" : { "orgStatus":false,
+        "address" : "6806 Sullivans Court    Fort Wayne  IN  46835  US",
+        "contacts" : [ {
+          "contactEmail" : "thevinehaiti@gmail.com",
+          "contactName" : "Julie Larame",
+          "contactPhone" : "224-622-5791"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "The Vine Haiti, Inc",
+        "orgType" : "Religious Organization",
+  
+        "specializations": [
+          "Business",
+          "Child: Feeding Programs",
+          "Education: Trade School",
+          "Environment",
+          "Faith: Churches",
+          "Food: Food Sustainability",
+          "Health",
+          "Micro Finance",
+          "Short Term Volunteer Trips",
+          "Water And Sanitation",
+          "Women"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.thevinehaiti.org"
+  },
+  "ec18de7ff2" : { "orgStatus":false,
+        "address" : "12 rue dorzin    Mirebalais  Centre  HT5210  HT",
+        "contacts" : [ {
+          "contactEmail" : "dovilas583@hotmail.com",
+          "contactName" : "Anderson Dovilas",
+          "contactPhone" : "4077321360"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Anderson Dovilas Foundation, INC",
+        "orgType" : "Humanitarian Organization",
+  
+        "specializations": [
+          "Child: Sponsorship",
+          "Child: Feeding Programs",
+          "Environment",
+          "Food: Food Aid Relief",
+          "Food: Food Sustainability",
+          "Food: Agroecology",
+          "Health",
+          "Human Rights",
+          "Micro Finance",
+          "Research",
+          "Water And Sanitation",
+          "Women"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.adovilasfoundation.org"
+  },
+  "a3499e72ad" : { "orgStatus":false,
+        "address" : "66 Wood Lane End    HEMEL HEMPSTEAD  Hertfordshire  HP2 4RF  GB",
+        "contacts" : [ {
+          "contactEmail" : "adam.boxer@wessexsocialventures.com",
+          "contactName" : "Adam Boxer",
+          "contactPhone" : "+447904261573"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : ["Find Partners", "Increase Visibility"],
+        "orgName" : "Wessex Social Ventures",
+        "orgType" : "Social Enterprise",
+  
+        "specializations": [
+          "Business",
+          "Micro Finance"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "http://wessexsocialventures.com/"
+  },
+  "babd242fd0" : { "orgStatus":false,
+        "address" : "Fort Jacques #6 Fermathe  Quest  12345 HT",
+        "contacts" : [ {
+          "contactEmail" : "tim@haitischoolproject.org",
+          "contactName" : "Tim Myers",
+          "contactPhone" : "50943018313"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : ["Find Partners", "Network", "Increase Visibility"],
+        "orgName" : "Haiti School Project",
+        "orgType" : "Local NGO",
+  
+        "specializations": [
+          "Business",
+          "Child: Feeding Programs",
+          "Education: Preschool",
+          "Education: Elementary",
+          "Micro Finance",
+          "Water And Sanitation"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.haitischoolproject.org"
+  
+  
+  
+  },
+  "8ca3e24f09" : { "orgStatus":false,
+        "address" : "8, rue S. Walter Duval Roche  P.O. box 30150  Croix des Bouquets  Port-au-Prince HT-6120  HT",
+        "contacts" : [ {
+          "contactEmail" : "asambulance@gmail.com",
+          "contactName" : "Getro MATHIEU",
+          "contactPhone" : "50932223967"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Action Secours Ambulance",
+        "orgType" : "LocalNGO",
+  
+        "specializations": [
+          "Child: Orphanages",
+          "Child: Sponsorship",
+          "Disaster Relief",
+          "Education: Elementary",
+          "Education: High School",
+          "Education: University",
+          "Environment",
+          "Food: Food Aid Relief",
+          "Food: Food Sustainability",
+          "Food: Agroecology",
+          "Health",
+          "Human Rights",
+          "Micro Finance",
+          "Refugees",
+          "Research",
+          "Short Term Volunteer Trips",
+          "Water And Sanitation",
+          "Women"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.asambulance.org"
+  },
+  "f0b9107528" : { "orgStatus":false,
+        "address" : "#32 Rue Borno Prolonge Petion-Ville l'oues 00000 US",
+        "contacts" : [ {
+          "contactEmail" : "john@haitipartners.org",
+          "contactName" : "John Engle",
+          "contactPhone" : "202-236-6532"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data"],
+        "orgName" : "Haiti Partners",
+        "orgType" : "INGOs",
+  
+        "specializations": [
+          "Education: Preschool",
+          "Education: Elementary",
+          "Short Term Volunteer Trips"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.haitipartners.org"
+  
+  },
+  "76e726300e" : { "orgStatus":false,
+        "address" : "Rue Casseus No. 16  Pacot  Port-au-Prince  Ouest  HT6110  HT",
+        "contacts" : [ {
+          "contactEmail" : "m.gabriel@buildchange.org",
+          "contactName" : "Michael Gabriel",
+          "contactPhone" : "+509-4426-8827"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Build Change",
+        "orgType" : "Social Enterprise",
+  
+        "specializations": [
+          "Science And Technology"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.buildchange.org"
+  },
+  "99e8ab1df5" : { "orgStatus":false,
+        "address" : "uganda    jinja  Eastern Region  256  UG",
+        "contacts" : [ {
+          "contactEmail" : "basalirwanicholas@gmail.com",
+          "contactName" : "basalirwa nicholas",
+          "contactPhone" : "+256777302395"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Enterpreneurs Hand Uganda",
+        "orgType" : "Social Enterprise",
+  
+        "specializations": [
+          "Business",
+          "Education: Trade School",
+          "Food: Food Sustainability",
+          "Short Term Volunteer Trips"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "www.ehu.org"
+  
+  },
+  "7fc9e1b2c5" : { "orgStatus":false,
+        "address" : "389 rue Sara, Cité Soleil, Boulevard des Americains    Port au Prince  Port au Prince  HT6123  HT",
+        "contacts" : [ {
+          "contactEmail" : "samuelcadet50@gmail.com",
+          "contactName" : "Samuel Cadet",
+          "contactPhone" : "+50946529811"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "RAVAGEP",
+        "orgType" : "Local NGO",
+  
+        "specializations": [
+          "Disaster Relief",
+          "Environment"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "Pas de website"
+  },
+  "e606c08014" : { "orgStatus":false,
+        "address" : "Route Moleard, entre Moleard 7 & 9    Croix-des-Bouquets  Bon Repos  HT  HT",
+        "contacts" : [ {
+          "contactEmail" : "unascad15janv@gmail.com",
+          "contactName" : "SEVERE Joseph",
+          "contactPhone" : "+50939065503"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "Union des Amis Socio Culturels d'Action en Developpement (UNASCAD)",
+        "orgType" : "Local NGO",
+  
+        "specializations": [
+          "Child: Feeding Programs",
+          "Disaster Relief",
+          "Environment",
+          "Human Rights",
+          "Science And Technology",
+          "Short Term Volunteer Trips",
+          "Sports",
+          "Water And Sanitation"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "In construction"
+  },
+  "674ff0695a" : { "orgStatus":false,
+        "address" : "1 Villa Mamika  Duval 24 Val des Lauriers #3  Croix des Bouquet  Ouest  24  HT",
+        "contacts" : [ {
+          "contactEmail" : "gwen@helenforhaiti.org",
+          "contactName" : "Gwen Frazier",
+          "contactPhone" : "919-630-1200"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Network"],
+        "orgName" : "Helen Little Haiti Foundation",
+        "orgType" : "INGOs",
+  
+        "specializations": [
+          "Education: Preschool",
+          "Education: Elementary",
+          "Education: High School",
+          "Education: University",
+          "Education: Trade School",
+          "Food: Food Sustainability",
+          "Food: Agroecology",
+          "Water And Sanitation",
+          "Women"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "Helenlittlehaitifoundation.org"
+  },
+  "e1768e44be" : { "orgStatus":false,
+        "address" : "Route nationale nAб, Haut du Marché,    Titanyen  ouest  Arcahaie  HT",
+        "contacts" : [ {
+          "contactEmail" : "navelant.n@gmail.com",
+          "contactName" : "Navelant natacha",
+          "contactPhone" : "43240990"
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners"],
+        "orgName" : "Fondation Montesinos",
+        "orgType" : "Local NGO",
+  
+        "specializations": [
+          "Child: Orphanages",
+          "Education: Elementary",
+          "Education: High School",
+          "Faith: Churches"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "https://fondationmontesinos.jimdo.com/"
+  },
+  "137c518a5b" : { "orgStatus":false,
+        "address" : "98, RUE LAMARTINIERE    PETION -VILLE  WEST  W.I  HT",
+        "contacts" : [ {
+          "contactEmail" : "CIG_GROUP@HOTMAIL.COM",
+          "contactName" : "EDDY DELELEU",
+          "contactPhone" : "31328558 "
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Network", "Attend/Facilitate Training", "Increase Visibility"],
+        "orgName" : "OPERATION HOPE FOR CHILDREN OF HAITI",
+        "orgType" : "Local NGO",
+  
+        "specializations": [
+          "Environment",
+          "Health",
+          "Human Rights"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "OPHCOH.COM"
+  },
+  "6ce4554cc3 " : { "orgStatus":false,
+        "address" : "98, Delmas 75 Fragneau ville Imp Lamy # 3 house of Hope  Delmas 75 Catalpa # 13  Port Au Prince  Delmas  HT 6120  HT ",
+        "contacts" : [ {
+          "contactEmail" : "societevertehaiti@gmail.com ",
+          "contactName" : "Max Gensky St Cyr ",
+          "contactPhone" : "+509 38200627 "
+        } ],
+  
+        "facebook" : "ww",
+        "interests" : [ "Funding", "Find Partners", "Access Data", "Attend/Facilitate Workshops", "Network", "Attend/Facilitate Training", "Increase Visibility "],
+        "orgName" : "SO.VE.H ( Green Society Haiti) ",
+        "orgType" : "Local NGO",
+  
+        "specializations": [
+          "Child: Orphanages",
+          "Environment",
+          "Food: Agroecology",
+          "Short Term Volunteer Trips",
+          "Water And Sanitation"
+        ],
+    
+        "twitter" : "ww",
+        "website" : "so.ve.h"
+  }
+  }
+  
+  

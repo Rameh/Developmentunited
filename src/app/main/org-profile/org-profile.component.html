@@ -1,0 +1,285 @@
+<div class="jumbotron jumbotron-billboard"  >
+   <div class="img" [ngStyle]="{'background':coverBackground}"></div>
+        
+    <h2>Organization Profile</h2>
+    <div class="container-fluid">
+        <div class="row" style="text-align:left">
+            
+            <div class="col-lg-7">
+                <ul style="list-style: none;">
+                    <li>
+                        <h2>
+                            <b>Name: {{org?.orgName}}</b>
+                        </h2>
+                    </li>
+                    <li>
+                        <h4>Location: {{org?.address}}</h4>
+                    </li>
+                    <!-- <li>
+                            <h4>Category: {{org?.orgName}}</h4>
+                        </li> -->
+                    <li>
+                        <h4>Type: {{org?.orgType}}</h4>
+                    </li>
+                    <h4>Website: <a target="_blank" href="https://{{org?.website}}"> {{org?.website}}</a></h4>
+                </ul>
+            </div>
+
+            <div class="col-lg-5" style="text-align:left">
+                <div class="container-fluid">
+                    <h5>Specializations</h5>
+                    <a *ngFor="let specialization of org?.specializations;" class="btn btn-secondary btn-md">
+                        {{specialization}}</a>
+                </div>
+                <div class="divider"></div>
+
+                <div class="container-fluid">
+                    <h5>Interests</h5>
+                    <a *ngFor="let interest of org?.interests;" class="btn btn-secondary btn-md">
+                        {{interest}}</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row" style="text-align:left">
+            <div class="col-lg-6" style="text-align:left">
+                <nav class="nav nav-inline">
+                    <a target="_blank" href="http://twitter.com/{{org?.twitter}}" class="nav-link">
+                        <span class="ping"></span>
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="http://facebook.com/{{org?.facebook}}" class="nav-link">
+                        <span class="ping"></span>
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <!-- <a target="_blank" href="https://{{org?.website}}" class="nav-link">
+                        <span class="ping"></span>
+                        <i class="fa fa-globe"></i>
+                    </a> -->
+                    <!-- <a target="_blank" href="mailto://{{org?.contacts['0'].contactEmail}}" class="nav-link">
+                        <span class="ping"></span>
+                        <i class="fa fa-envelope-o"></i>
+                    </a> -->
+                    <a *ngIf="org?.contacts.length >= 1" target="_blank" href="mailto://{{org?.contacts['0'].contactEmail}}" class="nav-link">
+                        <span class="ping"></span>
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+            
+                </nav>
+            </div>
+            <div class="col-lg-3" style="text-align:left"></div>
+            <div class="col-lg-3" style="text-align:left">
+                <div *ngIf="admin" class="col-lg-5" style="text-align:right">
+                    <a class="btn btn-lg" (click)="editorg()">Edit
+                        <i class="fa fa-pencil-square-o fa-1x"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+</div>
+
+<div class="divider"></div>
+
+
+<h3>Organization Map</h3>
+<div>
+    <ngui-map zoom="16" [center]="[lat,long]" (mapReady$)="onMapReady($event)" (mapClick)="onMapClick($event)" (idle)="onIdle($event)">
+    <marker zoom="16" (click)="showInfoWindow(pos,$event)" *ngFor="let pos of markerPosition" [position]="[pos.lat,pos.lng]"
+        [icon]="{ url: pos.iconUrl, anchor: [8,8], size: [35,35], scaledSize: [35,35] }" (initialized$)="onMarkerInit($event)">
+        <info-window class="gm-style-iw" id="iw-container">
+            <div class="iw-container">
+                <div class="iw-subTitle" *ngIf="marker.display">
+                    {{marker.name}}
+                </div>
+                <div *ngIf="marker.display">
+                    {{marker.address}}
+                </div>
+            </div>
+        </info-window>
+    </marker>
+
+</ngui-map>
+</div>
+
+<div class="divider"></div>
+<h3>Project List</h3>
+<div class="row container">
+
+    <!-- tabs with custom heading templates -->
+    <tabset class="col-md-12">
+        <tab>
+            <div class="scrollable" (elementVisible)="wid = $event.id" (elementHidden)="whid = $event.id" ng2-scrollable>
+                <div class="col-md-3">
+                    <span *tabHeading>
+                        <button type="button" class="btn btn-outline-default">All Projects</button>
+                    </span>
+                </div>
+                <div class="row" *ngIf="projects?.length<=0 || projects == undefined">
+
+
+
+                    <div class="col-md-12">
+                        <div class="callout-light text-center fade-in-b">
+                            <h1>No Projects to list </h1>
+                            <div *ngIf="admin">
+                                <b>Organization Owner?</b>
+                                <p>Click here to add projects..</p>
+                                <a [routerLink]="['/registerproject/new/new']" class="btn btn-default">Add Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row transparent" *ngFor="let proj of projects">
+                    <div class="col-md-12">
+                        <div class="well">
+                            <h3> Project Name: {{proj?.name}}</h3>
+                            <div class="plan-name">Location: {{proj?.projectAddress}}</div>
+                            <div class="text">
+                                <p>Description: {{proj?.projectDescription}}</p>
+                            </div>
+                            <button type="button" class="btn btn-default" (click)="viewProj(proj?.projectid)">View More Details
+                                <span class="fa fa-plus">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </tab>
+        <tab>
+            <div class="scrollable" (elementVisible)="wid = $event.id" (elementHidden)="whid = $event.id" ng2-scrollable>
+                <div class="col-md-3">
+                    <span *tabHeading>
+                        <button type="button" class="btn btn-outline-primary">Filter by Ongoing Projects</button>
+                    </span>
+                </div>
+                <div class="row" *ngIf="currentProjects.length<=0">
+                    <div class="col-md-12">
+                        <div class="callout-light text-center fade-in-b">
+                            <h1>No Ongoing Projects to list </h1>
+                            <div *ngIf="admin">
+                                <b>Organization Owner?</b>
+                                <p>Click here to add projects..</p>
+                                <a [routerLink]="['/registerproject/new/new']" class="btn btn-default">Add Projects</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row transparent" *ngFor="let proj of currentProjects">
+                    <div class="col-md-12">
+                        <div class="well">
+                            <h3> Project Name: {{proj?.name}}</h3>
+                            <div class="plan-name">Location: {{proj?.projectAddress}}</div>
+                            <div class="text">
+                                <p>Description: {{proj?.projectDescription}}</p>
+                            </div>
+                            <button type="button" class="btn btn-default" (click)="viewProj(proj?.projectid)">View More Details
+                                <span class="fa fa-plus">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </tab>
+        <tab>
+            <div class="scrollable" (elementVisible)="wid = $event.id" (elementHidden)="whid = $event.id" ng2-scrollable>
+                <div class="col-md-3">
+                    <span *tabHeading>
+                        <button type="button" class="btn btn-outline-primary">Filter by Past Projects</button>
+                    </span>
+                </div>
+                <div class="row" *ngIf="pastProjects.length<=0">
+                    <div class="col-md-12">
+                        <div class="callout-light text-center fade-in-b">
+
+                            <h1>No Past Projects to list </h1>
+                            <div *ngIf="admin">
+                                <b>Organization Owner?</b>
+                                <p>Click here to add projects..</p>
+                                <a [routerLink]="['/registerproject/new/new']" class="btn btn-default">Add Projects</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row transparent" *ngFor="let proj of pastProjects">
+                    <div class="col-md-12">
+                        <div class="well">
+                            <h3> Project Name: {{proj?.name}}</h3>
+                            <div class="plan-name">Location: {{proj?.projectAddress}}</div>
+                            <div class="text">
+                                <p>Description: {{proj?.projectDescription}}</p>
+                            </div>
+                            <button type="button" class="btn btn-default" (click)="viewProj(proj?.projectid)">View More Details
+                                <span class="fa fa-plus">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </tab>
+        <tab>
+            <div class="scrollable" (elementVisible)="wid = $event.id" (elementHidden)="whid = $event.id" ng2-scrollable>
+                <div class="col-md-3">
+                    <span *tabHeading>
+                        <button type="button" class="btn btn-outline-primary">Project Proposals</button>
+                    </span>
+                </div>
+                <div class="row" *ngIf="proposedProjects.length<=0">
+                    <div class="col-md-12">
+                        <div class="callout-light text-center fade-in-b">
+
+                            <h1>No Project Proposals to list </h1>
+                            <div *ngIf="admin">
+                                <b>Organization Owner?</b>
+                                <p>Click here to add projects..</p>
+                                <a [routerLink]="['/registerproject/new/new']" class="btn btn-default">Add Projects</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row transparent" *ngFor="let proj of proposedProjects">
+                    <div class="col-md-12">
+                        <div class="well">
+                            <h3> Project Name: {{proj?.name}}</h3>
+                            <div class="plan-name">Location: {{proj?.projectAddress}}</div>
+                            <div class="text">
+                                <p>Description: {{proj?.projectDescription}}</p>
+                            </div>
+                            <!-- <a [routerLink]="['project/proj?.projectId']" class="btn btn-default"(click)="viewProj(proj?.projectid)">View Project Details</a>
+                             -->
+                             <button type="button" class="btn btn-default" (click)="viewProj(proj?.projectid)">View More Details
+                                <span class="fa fa-plus">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+
+
+            </div>
+        </tab>
+
+    </tabset>
+
+    <br/>
+    <br/>

@@ -1,0 +1,43 @@
+﻿<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            
+            <h4 class="modal-title">Login</h4>
+            
+        </div>
+
+        <div class="modal-body">
+
+            <appc-error-summary [errors]="errors"></appc-error-summary>
+            <div *ngIf="[loginmsg]!==''" class="well">
+                    {{loginmsg}}
+            </div>
+            
+            <appc-dynamic-form (formsubmit)="login($event)" [controls]="controls" [btnText]="'Login'"></appc-dynamic-form>
+            <button  class="btn btn-primary" routerLinkActive="active" routerLink="forgot" >Reset Password</button>
+            
+        </div>
+        <p class="text-center font-weight-bold">
+            OR
+        </p>
+        <div class="modal-body">
+
+
+            <div class="text-center">
+                <appc-social-login></appc-social-login>
+            </div>
+
+
+        </div>
+        <p class="text-center font-weight-bold">
+                Haven't Signed up?
+                
+            </p>
+            <div class="modal-body text-center ">
+                    <button type="button" (click)="signup()" class="btn btn-success float-right">Sign Up</button>
+                    
+                </div>
+            
+
+    </div>
+</div>
